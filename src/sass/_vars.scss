@@ -1,5 +1,17 @@
+:root{
+  --backgruond-color: #84A178;
+  --white-text: #FCFCFC;
+  --section-black-text: #131313;
+  --text-address: #D6936D;
+  --time-work:#ABABAB;
+  --btn-backgroundcolor: #F8D24E;
+  --btn-color:#000000;
+
+}
+
 body {
   font-family: 'Montserrat';
+  background-color: var(--backgruond-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
