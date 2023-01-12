@@ -1,7 +1,24 @@
-body {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.74;
-}
+// Common colors
+$primary-text-color: #131313;
+$secondary-text-color: #fcfcfc;
+$accent-color: #f8d24e;
+$primary-bg-color: #84a178;
+$modal-bg-color: #fcfcfc;
+$address-color: #d6936d;
+$work-hours-color: #ababab;
+$copyright-color: #7a7a7a;
+
+// colors for Products
+$ice-cream-color: #aec6a5;
+$ice-coffee-color: #efd478;
+$milkshake-color: #d6936d;
+$modal-info-color: #9cbe8f;
+
+// Colors for buttons
+$btn-hover-color: #0a8817;
+$btn-disabled-color: #ababab;
+$btn-slider-color: #d9d9d9;
+
+// time
+$time-duration: 250ms;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
