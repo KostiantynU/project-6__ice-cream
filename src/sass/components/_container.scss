@@ -1,0 +1,32 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @include phone {
+    width: 480px;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+  }
+  @include tablet {
+    width: 768px;
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+  }
+  @include desktop {
+    width: 1200px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+}

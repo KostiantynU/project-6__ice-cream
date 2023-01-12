@@ -1,4 +1,9 @@
 @mixin phone {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin mobile {
   @media screen and (min-width: 480px) {
     @content;
   }
@@ -17,9 +22,7 @@
 }
 
 @mixin retina {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     @content;
   }
 }
