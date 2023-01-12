@@ -1,0 +1,264 @@
+.container {
+  width: 1170px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  background: #84a178;
+}
+
+.abouts {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    width: 1200px;
+    height: 1228px;
+    left: 0px;
+    top: 0px;
+
+    background: #84a178;
+  }
+}
+
+.abouts__label {
+  position: absolute;
+  width: 376px;
+  height: 37px;
+  left: 412px;
+  top: 60px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.abouts__title {
+  position: absolute;
+  width: 481px;
+  height: 45px;
+  left: 360px;
+  top: 109px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.abouts__subtitle1 {
+  position: absolute;
+  width: 463px;
+  height: 111px;
+  left: 616px;
+  top: 326px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  /* or 28px */
+
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+
+.abouts__subtitle2 {
+  position: absolute;
+  width: 463px;
+  height: 107px;
+  left: 616px;
+  top: 445px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 194%;
+  /* or 27px */
+
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+
+.abouts__subtitle3 {
+  position: absolute;
+  width: 457px;
+  height: 23px;
+  left: 616px;
+  top: 560px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 194%;
+  /* or 27px */
+
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+
+.abouts__picture {
+  position: absolute;
+  width: 491px;
+  height: 529px;
+  left: 16px;
+  top: 236px;
+}
+
+.abouts__button {
+  width: 164px;
+  height: 42px;
+  left: 616px;
+  top: 637px;
+  position: absolute;
+  cursor: pointer;
+
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.abouts__button:hover {
+  color: #000000;
+  background-color: #0a8817;
+}
+
+.abouts__button:focus {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #fcfcfc;
+}
+
+.abouts__items {
+  display: flex;
+  list-style: none;
+
+  position: absolute;
+  width: 1168px;
+  height: 225px;
+  left: 16px;
+  top: 825px;
+}
+
+.abouts__heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 71px;
+  /* identical to box height */
+
+  margin-bottom: 12px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.abouts__text {
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  /* or 28px */
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #fcfcfc;
+}
+
+.abouts__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: 50%;
+}
+
+.abouts__svg {
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+
+  background: #f8d24e;
+  border-radius: 50%;
+}
+
+.elem {
+  // position: absolute;
+  width: 490px;
+  height: 490px;
+  left: 16px;
+  top: 236px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .square {
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    top: 39px;
+
+    background: url(/src/images/about-advantahes/cow-desk-1x.png);
+    border-radius: 1852.2px;
+  }
+}
