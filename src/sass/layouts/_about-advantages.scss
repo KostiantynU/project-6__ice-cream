@@ -51,6 +51,7 @@
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   border-radius: 250px;
+
   margin-top: 82px;
 }
 
@@ -166,6 +167,8 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 12px;
 
   color: #fcfcfc;
 }
@@ -193,4 +196,8 @@
 
   background: #f8d24e;
   border-radius: 25px;
+}
+
+.abouts__features {
+  margin-right: 30px;
 }
