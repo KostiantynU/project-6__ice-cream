@@ -1,6 +1,8 @@
 @import './vars';
-@import './common';
 @import './mixin';
+@import './base/common';
+@import './base/reset';
+@import './base/vissually-hidden';
 @import './layouts/slider';
 @import './buttons';
 @import './layouts/hero-header';
