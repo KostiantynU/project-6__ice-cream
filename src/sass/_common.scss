@@ -1,1 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  color: $primary-text-color;
+
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
