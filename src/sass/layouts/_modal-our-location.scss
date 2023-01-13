@@ -1,0 +1,93 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  padding: 28px;
+  color: #131313;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #131313;
+  background-color: lime;
+  // background-color: transparent;
+  border: none;
+}
+.modal-map__icon {
+  // fill: 131313;
+  fill: currentColor;
+}
+.modal-map__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Seymour One';
+  font-style: Book;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.modal-map__viewer {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.modal-map__button {
+  width: 134px;
+  height: 42px;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+  background-color: #F8D24E;
+  @include tablet {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
