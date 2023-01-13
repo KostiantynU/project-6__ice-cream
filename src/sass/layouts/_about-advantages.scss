@@ -4,6 +4,10 @@
 }
 
 .abouts__label {
+  @media screen and (max-width: 1200px) {
+    font-size: 22px;
+    line-height: 27px;
+  }
   display: block;
   font-family: 'Montserrat';
   font-style: normal;
@@ -37,22 +41,22 @@
   margin-top: 12px;
 }
 
-.abouts__picture {
+.abouts__wrap {
   width: 490px;
   height: 490px;
-  left: 16px;
-  top: 236px;
 
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background-image: linear-gradient(
+    to left,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  );
+  position: relative;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  border-radius: 250px;
-
-  margin-top: 82px;
+  border-radius: 50%;
+}
+.abouts__picture {
+  position: absolute;
+  top: 9%;
 }
 
 .abouts__subtitle1 {
@@ -67,7 +71,7 @@
   font-size: 16px;
   line-height: 176%;
   /* or 28px */
-
+  margin-bottom: 8px;
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
@@ -104,7 +108,7 @@
   font-size: 14px;
   line-height: 194%;
   /* or 27px */
-
+  margin-top: 8px;
   letter-spacing: 0.04em;
   text-decoration: none;
 
@@ -119,6 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 82px;
 }
 
 .abouts__button {
@@ -126,7 +131,6 @@
   height: 42px;
   left: 616px;
   top: 637px;
-  position: absolute;
   cursor: pointer;
 
   background: #f8d24e;
@@ -138,6 +142,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
+  margin-top: 54px;
 
   align-items: center;
   text-align: center;
@@ -151,7 +156,7 @@
 }
 
 .abouts__items {
-  margin-top: 60px;
+  margin-top: 99px;
   display: flex;
   list-style-type: none;
 }
@@ -187,15 +192,30 @@
   color: #fcfcfc;
 }
 
-.abouts__svg {
-  text-align: center;
+// .abouts__svg {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   text-align: center;
+//   width: 50px;
+//   height: 50px;
+//   left: 0px;
+//   top: 0px;
+
+//   background: #f8d24e;
+//   border-radius: 25px;
+// }
+
+.abouts__icon {
   width: 50px;
   height: 50px;
-  left: 0px;
-  top: 0px;
-
-  background: #f8d24e;
-  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .abouts__features {
