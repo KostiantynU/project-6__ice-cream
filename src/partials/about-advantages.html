@@ -1,0 +1,47 @@
+<button type="button" data-modal-open>Read more</button>
+
+<!-- Modal "read more" -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close" data-modal-close>
+      <svg width="11" height="11" class="modal__icon">
+        <use href="./images/modal-more/modal-cross.svg"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">
+      How it’s made?</h2>
+    <div class="modal_video">
+      <iframe class="modal__player" width="100%" height="315"
+        src="https://www.youtube.com/embed/uRlvaqqVaWQ"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; 
+        web-share" allowfullscreen>
+      </iframe>
+      <!-- <iframe class="modal__player" width="100%" height="315"
+        src="https://www.youtube.com/embed/bdRhtMO1yd0"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; 
+      web-share" allowfullscreen>
+      </iframe> -->
+    </div>
+    <p class="modal__text">Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Aspernatur beatae voluptatibus
+      porro, tenetur tempore, natus adipisci iusto
+      eligendi dignissimos provident unde quod,
+      vero veritatis deleniti.
+      Harum eveniet amet dicta excepturi?
+    </p>
+
+
+  </div>
+</div>
+
+
+
+<!-- Вопросы -->
+<!-- 1. Не появляется иконка-крестик для закрытия мод окна -->
+<!-- 2. Если закрыть мод окно во время проигрывания видео, 
+то звук видео продолжает воспроизводиться. -->
+<!-- 3. Если во время просмотра видео увеличить плеер, 
+то часть экрана скрыта с элементами управления. -->
