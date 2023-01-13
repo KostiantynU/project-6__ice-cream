@@ -1,8 +1,11 @@
-@import './vars';
-@import './common';
-@import './mixin';
+@import './utils/vars';
+@import './utils/mixin';
+@import './base/common';
+@import './base/reset';
+@import './base/vissually-hidden';
 @import './layouts/slider';
-@import './buttons';
+@import './components/buttons';
+@import './components/container';
 @import './layouts/hero-header';
 @import './layouts/products';
 @import './layouts/about-advantages';
