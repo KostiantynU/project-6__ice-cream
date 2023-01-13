@@ -24,18 +24,17 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  // max-width: 480px;
   height: auto;
   padding: 28px;
+  color: #131313;
   transform: translate(-50%, -50%) scale(1);
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 568px;
     padding: 32px 60px;
   }
@@ -44,15 +43,14 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: black;
-  // color: #131313;
+  color: #131313;
   background-color: lime;
   // background-color: transparent;
   border: none;
 }
 .modal__icon {
-  fill: black;
-  // fill: currentColor;
+  // fill: 131313;
+  fill: currentColor;
 }
 .modal__title {
   margin-bottom: 20px;
@@ -61,23 +59,37 @@
   font-style: Book;
   font-size: 16px;
   line-height: 1.5;
+  color: #131313;
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
-.iframe_video {
+.modal_video {
   height: 0px;
   padding-bottom: 56.2%;
   position: relative;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
-.modal__plyer {
-  // max-width: 480px;
-  // height: auto;
+.modal__player {
   width: 100%;
   height: 100%;
   position: absolute;
-  margin-bottom: 20px;
+  
 }
 .modal__text {
   font-family: Montserrat;
   font-style: Regular;
   font-size: 14px;
   line-height: 1.43;
+  color: #131313;
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.38;
+  }
 }
+
