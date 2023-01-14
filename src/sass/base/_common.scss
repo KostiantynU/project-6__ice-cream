@@ -1,14 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+/* Default for body */
+body {
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+/* Responsive images */
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-body {
-  color: $primary-text-color;
-  background-color: $primary-bg-color;
-
-  font-family: 'Montserrat', 'Seymour One', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.04em;
 }
