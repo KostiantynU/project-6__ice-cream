@@ -155,4 +155,81 @@
       bottom: -32px;
     }
   }
+
+  // стилі для кнопок
+
+  &__btn-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 60px;
+    
+    @include tablet {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    @include desktop {
+        margin-bottom: 120px;
+    }
+  }
+
+  &__btn {
+    width: 196px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 10px;
+    background-color: $accent-color;
+    color: $primary-text-color;
+    fill: $primary-text-color;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 1.29;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+    transition: background-color $time-duration $time-function,
+        color $time-duration $time-function,
+        fill $time-duration $time-function;
+        
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+
+    &:focus {
+        background-color: $btn-hover-color;
+        fill: $secondary-text-color;
+        color: $secondary-text-color;
+    }
+
+    &:disabled {
+        background-color: $btn-disabled-color;
+    }
+  }
+
+  &__btn--transparent {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    transition: border-color $time-duration $time-function;
+    
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $btn-hover-color;
+    }
+      
+    &:focus {
+        background-color: transparent;
+        fill: $secondary-text-color;
+        border: 2px solid $btn-hover-color;
+    }
+
+    &:disabled {
+        background-color: transparent;
+        border: 2px solid $btn-disabled-color;
+    }
+  }
 }
