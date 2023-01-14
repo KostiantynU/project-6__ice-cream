@@ -1,30 +1,47 @@
+p {
+  @include tablet {
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    margin-bottom: 8px;
+  }
+  margin-bottom: 16px;
+}
+
 .aboust {
   width: 100%;
   height: auto;
 }
 
-p {
-  margin-bottom: 8px;
-}
-
 .abouts__label {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @include tablet {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  @include desktop {
     font-weight: 800;
     font-size: 30px;
     line-height: 37px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 22px;
-    line-height: 27px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   font-weight: 800;
+  //   font-size: 30px;
+  //   line-height: 37px;
+  // }
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   font-size: 22px;
+  //   line-height: 27px;
+  // }
 
   display: block;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -34,17 +51,20 @@ p {
 }
 
 .abouts__title {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @include tablet {
     font-size: 34px;
     line-height: 43px;
+    width: 100%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include desktop {
     font-size: 36px;
     line-height: 45px;
+    width: 100%;
   }
-
-  width: 100%;
-  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  // height: 45px;
   left: 360px;
   top: 109px;
 
@@ -52,8 +72,8 @@ p {
   font-style: normal;
   font-weight: 400;
 
-  font-size: 34px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 38px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -62,14 +82,25 @@ p {
   margin-top: 12px;
 }
 
+.abouts__wrapper {
+  @include tablet {
+    width: 330px;
+  }
+  @include desktop {
+    width: 490px;
+  }
+}
+
 .abouts__wrap {
   @include tablet {
     width: 330px;
     height: 330px;
+    margin-right: 38px;
   }
   @include desktop {
     width: 490px;
     height: 490px;
+    margin-left: 0;
   }
   width: 279px;
   height: 278px;
@@ -81,47 +112,55 @@ p {
   position: relative;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .abouts__picture {
   position: absolute;
   top: 9%;
 }
 
-.abouts__subtitle1 {
+.abouts__subtitle {
   @include tablet {
+    width: 100%;
     font-size: 12px;
     margin-right: 34px;
   }
   @include desktop {
     font-size: 16px;
   }
-  width: 463px;
+  width: 220px;
   // height: 111px;
   left: 616px;
   top: 326px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
 
-  font-size: 16px;
+  font-size: 12px;
   line-height: 176%;
   /* or 28px */
   // margin-bottom: 8px;
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
-  margin-right: 121px;
+  // margin-right: 121px;
 }
 
-.abouts__subtitle2 {
+.abouts__addition {
   @include tablet {
     font-size: 12px;
+    width: 100%;
   }
   @include desktop {
     font-size: 14px;
   }
-  width: 463px;
+  width: 220px;
   // height: 107px;
   left: 616px;
   top: 445px;
@@ -129,25 +168,31 @@ p {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 194%;
   /* or 27px */
 
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
 
   color: #fcfcfc;
 }
 
-.abouts__subtitle3 {
+.abouts__desc {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
   @include tablet {
     font-size: 12px;
+    width: 100%;
   }
   @include desktop {
     font-size: 14px;
   }
 
-  width: 457px;
-  height: 23px;
+  width: 100%;
   left: 616px;
   top: 560px;
 
@@ -177,24 +222,29 @@ p {
 }
 
 .abouts__flex {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   @include tablet {
     display: flex;
+    margin-top: 82px;
   }
   @include desktop {
     display: flex;
+    margin-top: 82px;
   }
 
   justify-content: space-between;
   align-items: center;
-  margin-top: 82px;
+  margin-top: 32px;
 
   // text-align: center;
 }
 
 .abouts__button {
-  @include tablet {
-    margin-top: 54px;
-  }
+  // @include tablet {
+  //   margin-top: 54px;
+  // }
   @include desktop {
     margin-top: 54px;
   }
@@ -233,11 +283,13 @@ p {
 .abouts__items {
   @include tablet {
     display: flex;
+    margin-top: 99px;
   }
   @include desktop {
     display: flex;
+    margin-top: 99px;
   }
-  margin-top: 99px;
+  margin-top: 60px;
   display: block;
   list-style-type: none;
 }
@@ -271,6 +323,7 @@ p {
 
 .abouts__text {
   @include tablet {
+    width: auto;
     font-size: 14px;
     line-height: 174%;
     font-weight: 400;
@@ -278,13 +331,14 @@ p {
     line-height: 176%;
   }
   @include desktop {
+    width: auto;
     font-size: 16px;
     line-height: 176%;
     font-weight: 400;
     font-size: 16px;
     line-height: 176%;
   }
-
+  width: 230px;
   font-family: 'Montserrat';
   font-style: normal;
 
@@ -295,6 +349,9 @@ p {
 
   text-align: center;
   letter-spacing: 0.02em;
+
+  margin-left: auto;
+  margin-right: auto;
 
   color: #fcfcfc;
   text-align: center;
@@ -331,5 +388,11 @@ p {
 }
 
 .abouts__features {
-  margin-right: 30px;
+  // @include tablet {
+  //   margin-right: 30px;
+  // }
+  @include desktop {
+    margin-right: 30px;
+  }
+  // margin-right: 30px;
 }
