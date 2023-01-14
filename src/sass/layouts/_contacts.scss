@@ -29,7 +29,7 @@
         // width: 100%;
         font-weight: 500;
         font-size: 12px;
-        line-height: 1.834;
+        line-height: 1.83;
         letter-spacing: 0.04em;
         margin: 0 auto;
         padding: 40px 32px 24px;
@@ -41,7 +41,7 @@
             max-width: 224px;
             // width: 100%;
             font-size: 14px;
-            line-height: 1.858;
+            line-height: 1.86;
             padding: 40px 24px;
         }
 
@@ -49,14 +49,15 @@
             max-width: 368px;
             // width: 100%;
             font-size: 16px;
-            line-height: 1.875;
+            line-height: 1.88;
             padding: 40px;
         }
     }
 
     &__label {
         display: inline-block;
-        line-height: 1.167;
+        line-height: 1.17;
+        text-transform: uppercase;
         margin-bottom: 20px;
         padding: 4px 22px;
         background-color: $accent-color;
@@ -64,7 +65,7 @@
 
         @include tablet {
             font-size: 16px;
-            line-height: 1.375;
+            line-height: 1.38;
             margin-bottom: 32px;
             padding: 4px 14px;
         }
@@ -133,7 +134,7 @@
         display: flex;
         flex-flow: column;
         gap: 6px;
-        line-height: 1.584;
+        line-height: 1.58;
 
         @include tablet {
             gap: 4px;
