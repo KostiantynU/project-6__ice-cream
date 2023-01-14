@@ -8,17 +8,17 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width:0px) {
-        background-image: url(/images/Backgroud_mobile.jpg);
-    }
+    // @media screen and (min-width:0px) {
+    //     background-image: url(./images/Backgroud_mobile.jpg);
+    // }
 
-    @media screen and (min-width:768px) {
-        background-image: url(/images/Background_tablet.jpg);
-    }
+    // @media screen and (min-width:768px) {
+    //     background-image: url(./images/Background_tablet.jpg);
+    // }
 
-    @media screen and (min-width:1200px) {
-        background-image: url(/images/Backgroud_desktop.jpg);
-    }
+    // @media screen and (min-width:1200px) {
+    //     background-image: url(./images/Backgroud_desktop.jpg);
+    // }
 }
 
 .products__list {
@@ -82,15 +82,15 @@
         box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 25%);
     }
 
-    &::after {
-        background-image: url(/images/cream_x1.png);
-        top: -182px;
-        left: 33px;
+    // &::after {
+    //     background-image: url(./images/cream_x1.png);
+    //     top: -182px;
+    //     left: 33px;
 
-        @media screen and (min-width:1200px) {
-            background-image: url(/images/ice-cream__desktop__x1.png);
-        }
-    }
+    //     @media screen and (min-width:1200px) {
+    //         background-image: url(./images/ice-cream__desktop__x1.png);
+    //     }
+    // }
 
 }
 
@@ -123,15 +123,15 @@
 
     }
 
-    &::after {
-        background-image: url(/images/coffee_x1.png);
-        top: -182px;
-        left: 33px;
+    // &::after {
+    //     background-image: url(./images/coffee_x1.png);
+    //     top: -182px;
+    //     left: 33px;
 
-        @media screen and (min-width:1200px) {
-            background-image: url(/images/ice-cofee__desktop__x1.png);
-        }
-    }
+    //     @media screen and (min-width:1200px) {
+    //         background-image: url(./images/ice-cofee__desktop__x1.png);
+    //     }
+    // }
 }
 
 
@@ -163,15 +163,15 @@
         box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 25%);
     }
 
-    &::after {
-        background-image: url(/images/milkshakes_x1.png);
-        top: -182px;
-        left: 33px;
+    // &::after {
+    //     background-image: url(./images/milkshakes_x1.png);
+    //     top: -182px;
+    //     left: 33px;
 
-        @media screen and (min-width:1200px) {
-            background-image: url(/images/milkshakes__desktop__x1.png);
-        }
-    }
+    //     @media screen and (min-width:1200px) {
+    //         background-image: url(./images/milkshakes__desktop__x1.png);
+    //     }
+    // }
 }
 
 

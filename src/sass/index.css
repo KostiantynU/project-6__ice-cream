@@ -98,34 +98,43 @@ ul {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 0px) {
-  .products {
-    background-image: url(//src/images/Backgroud__mobile-x1.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .products {
-    background-image: url(//src/images/Backgroud__tablet-x1.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .products {
-    background-image: url(//src/images/Backgroud__desktop-x1.png);
-  }
-}
 
 .products__list {
   width: auto;
   height: auto;
   margin-top: 303px;
-  display: flex;
-  gap: 29px;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: flex;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__list {
+    display: flex;
+    gap: 29px;
+  }
 }
 .products__list li {
-  width: 370px;
+  width: 280px;
   height: 536px;
   border-radius: 24px;
-  margin-bottom: 0;
+}
+@media screen and (min-width: 480px) {
+  .products__list li {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__list li {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__list li {
+    width: 370px;
+  }
 }
 
 .products__icecream {
@@ -135,20 +144,22 @@ ul {
 .products__icecream::before, .products__icecream::after {
   content: "";
   position: absolute;
-  width: 302px;
-  height: 302px;
-  display: block;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .products__icecream::before, .products__icecream::after {
+    width: 302px;
+    height: 302px;
+  }
 }
 .products__icecream::before {
-  top: -158px;
-  left: 33px;
+  top: -165px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: #9CBE8F;
-}
-.products__icecream::after {
-  background-image: url(//src/images/products/ice-cream__desktop__x1.png);
-  top: -182px;
-  left: 30px;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
 }
 
 .products__icecoffee {
@@ -158,20 +169,22 @@ ul {
 .products__icecoffee::before, .products__icecoffee::after {
   content: "";
   position: absolute;
-  width: 302px;
-  height: 302px;
+  width: 200px;
+  height: 200px;
   display: block;
 }
+@media screen and (min-width: 1200px) {
+  .products__icecoffee::before, .products__icecoffee::after {
+    width: 302px;
+    height: 302px;
+  }
+}
 .products__icecoffee::before {
-  top: -158px;
+  top: -165px;
   left: 33px;
   border-radius: 50%;
-  background-color: #F8D24E;
-}
-.products__icecoffee::after {
-  background-image: url(//src/images/products/ice-cofee__desktop__x1.png);
-  top: -182px;
-  left: 30px;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
 }
 
 .products__milkshakes {
@@ -181,20 +194,22 @@ ul {
 .products__milkshakes::before, .products__milkshakes::after {
   content: "";
   position: absolute;
-  width: 302px;
-  height: 302px;
+  width: 200px;
+  height: 200px;
   display: block;
 }
+@media screen and (min-width: 1200px) {
+  .products__milkshakes::before, .products__milkshakes::after {
+    width: 302px;
+    height: 302px;
+  }
+}
 .products__milkshakes::before {
-  top: -158px;
+  top: -165px;
   left: 33px;
   border-radius: 50%;
-  background-color: #D5753F;
-}
-.products__milkshakes::after {
-  background-image: url(//src/images/products/milkshakes__desktop__x1.png);
-  top: -182px;
-  left: 30px;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25);
 }
 
 .products__label {
@@ -234,12 +249,33 @@ ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 242px;
-  height: auto;
+  width: 200px;
   margin-top: 66px;
+}
+@media screen and (min-width: 768px) {
+  .products__text-box {
+    width: 172px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__text-box {
+    width: 246px;
+  }
 }
 
 .products_btn-icon {
   width: 16px;
   height: 40px;
+}
+
+.products__btn {
+  position: relative;
+  bottom: -280px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+.products__btn:hover, .products__btn:focus {
+  fill: rgb(137, 64, 64);
 }/*# sourceMappingURL=index.css.map */
