@@ -157,4 +157,80 @@
             bottom: -32px;
         }
     }
+
+// стилі для кнопок
+
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 60px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        @include desktop {
+            margin-bottom: 120px;
+        }
+    }
+
+    &__btn {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 600;
+        line-height: 1.29;
+        cursor: pointer;
+        fill: $primary-text-color;
+        background-color: $accent-color;
+        width: 196px;
+        border-radius: 10px;
+        border: 0;
+        // margin: 0;
+        padding: 12px;
+        transition: fill $time-duration, $time-function,
+            background-color $time-duration, $time-function,
+            box-shadow $time-duration, $time-function;
+
+        &:hover {
+            background-color: $btn-hover-color;
+            fill: #000;
+        }
+
+        &:focus {
+            background-color: $btn-hover-color;
+            fill: $secondary-text-color;
+        }
+
+        &:disabled {
+            background-color: $btn-disabled-color;
+            fill: #000;
+        }
+    }
+
+    &__btn--franchise {
+        fill: #000;
+        background-color: $primary-bg-color;
+        border-radius: 10px;
+        border: 2px solid $accent-color;
+
+        &:hover {
+            background-color: $primary-bg-color;
+            border: 2px solid $btn-hover-color;
+            }
+        
+        &:focus {
+            background-color: $primary-bg-color;
+            fill: #fff;
+            border: 2px solid $btn-hover-color;
+        }
+    
+        &:disabled {
+            background-color: $primary-bg-color;
+            border: 2px solid $btn-disabled-color;
+        }
+    }
 }
