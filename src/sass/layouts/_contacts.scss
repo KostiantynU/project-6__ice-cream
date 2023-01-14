@@ -1,5 +1,3 @@
-// Рядки з 1 по 49 видалю коли основні стилі будуть готові
-
 /* Змінні */
 $bg-color: #84a178;
 $accent-color: #f8d24e;
@@ -32,7 +30,7 @@ $milkshakes-color: #D6936D;
 
         @include desktop {
             gap: 32px;
-            margin-bottom: 64px;
+            margin-bottom: 60px;
         }
     }
 
@@ -40,10 +38,10 @@ $milkshakes-color: #D6936D;
         
         max-width: 280px;
         // width: 100%;
-        letter-spacing: 0.04em;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.834;
+        letter-spacing: 0.04em;
         margin: 0 auto;
         padding: 40px 32px 24px;
         background-color: $text-light-color;
@@ -52,34 +50,34 @@ $milkshakes-color: #D6936D;
 
         @include tablet {
             max-width: 224px;
-            padding: 40px 24px;
             // width: 100%;
             font-size: 14px;
+            line-height: 1.858;
+            padding: 40px 24px;
         }
 
-        // Я зупинився на цьому рядку
-
-        @media screen and (min-width: 1200px) {
-            padding: 40px 40px;
+        @include desktop {
             max-width: 368px;
-            width: 100%;
+            // width: 100%;
             font-size: 16px;
+            line-height: 1.875;
+            padding: 40px;
         }
     }
 
     &__label {
+        display: inline-block;
+        line-height: 1.167;
+        margin-bottom: 20px;
+        padding: 4px 22px;
         background-color: $accent-color;
         border-radius: 4px;
-        margin-bottom: 20px;
-        line-height: 1.167;
-        padding: 4px 22px;
-        // font-size: 12px;
-        display: inline-block;
-        // text-align: center;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             font-size: 16px;
+            line-height: 1.375;
             margin-bottom: 32px;
+            padding: 4px 14px;
         }
     }
 
@@ -90,12 +88,12 @@ $milkshakes-color: #D6936D;
         gap: 8px;
         margin-bottom: 48px;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             gap: 12px;
             margin-bottom: 64px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             gap: 8px;
             margin-bottom: 64px;
         }
@@ -104,6 +102,14 @@ $milkshakes-color: #D6936D;
     &__location {
         color: $milkshakes-color;
         height: 40px;
+
+        @include tablet {
+            height: 71px;
+        }
+
+        @include desktop {
+            height: 50px;
+        }
     }
 
     &__location:hover,
@@ -117,7 +123,7 @@ $milkshakes-color: #D6936D;
         flex-direction: column;
         margin-bottom: 48px;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             margin-bottom: 64px;
         }
     }
@@ -129,7 +135,7 @@ $milkshakes-color: #D6936D;
     &__time:not(:last-child) {
         margin-bottom: 8px;
 
-        @media screen and (min-width: 768px) {
+        @include desktop {
             margin-bottom: 12px;
         }
     }
@@ -139,6 +145,11 @@ $milkshakes-color: #D6936D;
         flex-flow: column;
         gap: 6px;
         line-height: 1.584;
+
+        @include tablet {
+            gap: 4px;
+            line-height: 1.5;
+        }
     }
 
     &__address::after,
@@ -149,11 +160,10 @@ $milkshakes-color: #D6936D;
         height: 1px;
         width: 100%;
         background-color: #e1e1e1;
-
         left: 0;
         bottom: -24px;
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             bottom: -32px;
         }
     }
