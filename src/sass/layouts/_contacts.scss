@@ -1,0 +1,158 @@
+/* Секція Контакти */
+
+.contacts {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+
+    @include tablet {
+      flex-direction: row;
+      margin-bottom: 40px;
+    }
+
+    @include desktop {
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item {
+    max-width: 280px;
+    // width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    padding: 40px 32px 24px;
+    background-color: $secondary-text-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @include tablet {
+      max-width: 224px;
+      // width: 100%;
+      font-size: 14px;
+      line-height: 1.86;
+      padding: 40px 24px;
+    }
+
+    @include desktop {
+      max-width: 368px;
+      // width: 100%;
+      font-size: 16px;
+      line-height: 1.88;
+      padding: 40px;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    line-height: 1.17;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 4px 22px;
+    background-color: $accent-color;
+    border-radius: 4px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 1.38;
+      margin-bottom: 32px;
+      padding: 4px 14px;
+    }
+  }
+
+  &__address {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 48px;
+
+    @include tablet {
+      gap: 12px;
+      margin-bottom: 64px;
+    }
+
+    @include desktop {
+      gap: 8px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__location {
+    color: $address-color;
+    height: 40px;
+
+    @include tablet {
+      height: 71px;
+    }
+
+    @include desktop {
+      height: 50px;
+    }
+  }
+
+  &__location:hover,
+  &__location:focus {
+    text-decoration: underline;
+  }
+
+  &__schedule {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__time {
+    color: $work-hours-color;
+  }
+
+  &__time:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include desktop {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+    line-height: 1.58;
+
+    @include tablet {
+      gap: 4px;
+      line-height: 1.5;
+    }
+  }
+
+  &__address::after,
+  &__schedule::after {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #e1e1e1;
+    left: 0;
+    bottom: -24px;
+
+    @include tablet {
+      bottom: -32px;
+    }
+  }
+}
