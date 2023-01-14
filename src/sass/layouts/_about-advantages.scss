@@ -3,6 +3,10 @@
   height: auto;
 }
 
+p {
+  margin-bottom: 8px;
+}
+
 .abouts__label {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     font-weight: 800;
@@ -84,8 +88,15 @@
 }
 
 .abouts__subtitle1 {
+  @include tablet {
+    font-size: 12px;
+    margin-right: 34px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
   width: 463px;
-  height: 111px;
+  // height: 111px;
   left: 616px;
   top: 326px;
 
@@ -96,7 +107,7 @@
   font-size: 16px;
   line-height: 176%;
   /* or 28px */
-  margin-bottom: 8px;
+  // margin-bottom: 8px;
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
@@ -104,8 +115,14 @@
 }
 
 .abouts__subtitle2 {
+  @include tablet {
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 14px;
+  }
   width: 463px;
-  height: 107px;
+  // height: 107px;
   left: 616px;
   top: 445px;
 
@@ -122,6 +139,13 @@
 }
 
 .abouts__subtitle3 {
+  @include tablet {
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 14px;
+  }
+
   width: 457px;
   height: 23px;
   left: 616px;
@@ -133,25 +157,47 @@
   font-size: 14px;
   line-height: 194%;
   /* or 27px */
-  margin-top: 8px;
+  // margin-top: 8px;
   letter-spacing: 0.04em;
   text-decoration: none;
 
   color: #fcfcfc;
 }
 .abouts__list {
+  @include tablet {
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 0;
+  }
+
   display: block;
   list-style-type: none;
+  margin-top: 62px;
 }
 
 .abouts__flex {
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    display: flex;
+  }
+
   justify-content: space-between;
   align-items: center;
   margin-top: 82px;
+
+  // text-align: center;
 }
 
 .abouts__button {
+  @include tablet {
+    margin-top: 54px;
+  }
+  @include desktop {
+    margin-top: 54px;
+  }
   width: 164px;
   height: 42px;
   left: 616px;
@@ -167,7 +213,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  margin-top: 54px;
+  margin-top: 24px;
 
   align-items: center;
   text-align: center;
@@ -180,41 +226,82 @@
   background-color: #0a8817;
 }
 
+.abouts__btn {
+  margin-left: 8px;
+}
+
 .abouts__items {
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    display: flex;
+  }
   margin-top: 99px;
-  display: flex;
+  display: block;
   list-style-type: none;
 }
 
 .abouts__heading {
+  @include tablet {
+    font-size: 48px;
+    line-height: 59px;
+    margin-top: 32px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 71px;
+    margin-top: 40px;
+  }
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 58px;
-  line-height: 71px;
+  font-size: 36px;
+  line-height: 44px;
   /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 16px;
   margin-bottom: 12px;
 
   color: #fcfcfc;
 }
 
 .abouts__text {
+  @include tablet {
+    font-size: 14px;
+    line-height: 174%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 176%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+  }
+
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
   /* or 28px */
 
   text-align: center;
   letter-spacing: 0.02em;
 
   color: #fcfcfc;
+  text-align: center;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 // .abouts__svg {
