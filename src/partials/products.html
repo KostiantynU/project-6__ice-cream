@@ -1,15 +1,17 @@
 <!-- modal with info -->
 
-<button type="button" data-modal-open>modal with info</button>
+<button type="button" class="js-open-modal" data-modal="number-one">
+  modal with info
+</button>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="js-close-menu">
+<div class="backdrop is-hidden">
+  <div class="modal" data-modal>
+    <button type="button" class="js-close-menu" data-modal-close>
       <svg width="20" height="20">
-        <use href=""></use>
+        <use href="./images/icons.svg#icon-close-line"></use>
       </svg>
     </button>
-    <p>Chololate icecream</p>
+    <p class="modal__title">Chololate icecream</p>
     <ul>
       <li>320</li>
       <li>4g</li>
