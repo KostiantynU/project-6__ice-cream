@@ -1,10 +1,8 @@
-/* Стили для подложки */
-
+/* Стилі для оверлея, затінення фонового екрану. Для транзішн вказав конкретно опасіті та 
+візібіліті, як робили в раннішніх ДЗ */
 .overlay {
-  /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -12,46 +10,34 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 0.3s all;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-
-/* Стили для модальных окон */
-
+/* Стилізація для модалок - незабуваємо робити стилі ПО МАКЕТУ. Тут стилі від "виробника" */
 .modal {
-  /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-
-  /*  Установаем ширину окна  */
   width: 100%;
   max-width: 500px;
-
-  /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-
-  /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  z-index: 30;
   text-align: center;
   padding: 30px;
   border-radius: 3px;
   background-color: #fff;
   transition: 0.3s all;
 }
-
-/* Стили для активных классов подложки и окна */
-
+/* Тут "вмикаються" модалки з класом актів, та оверлей (бекдроп) */
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
-
-/* Стили для кнопки закрытия */
-
+/* Тут стилізується сама СВГ. Якщо робите через кнопку+свг - тоді стилізуємо КНОПКУ. А СВГ тільки 
+даємо філл: каррентКолор, і то якщо треба ховер+фокус. */
 .modal__cross {
   width: 15px;
   height: 15px;
@@ -61,10 +47,25 @@
   fill: #444;
   cursor: pointer;
 }
+/* Тут я вставив свою кнопку (в яку засунув цю саму СВГ з прикладу), для прикладу, 
+і задав їй стилі "від фонаря" :-) */
+.button-for-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: aqua;
+  & > .modal__cross {
+    top: 5px;
+    right: 5px;
+  }
+}
 
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-a {
+/* З прикладу від "виробника" тут стилізувався ТЕГ А. Перероблюю на класс, для цих посилань з прикладу,
+щоб вони не ломали вам Ваші посилання, коли завантажите ці зміни в репозиторії собі. */
+.a {
   padding: 20px;
   display: inline-block;
   text-decoration: none;
