@@ -1,13 +1,18 @@
+<!-- тестовая кнопка -->
+<button type="button" class="franchise-test js-open-modal"
+  data-modal="read-more">read-more-test</button>
+
 <!-- Modal "read-more" -->
 
-<div class="modal-more">
-  <button type="button" class="modal-more__close">
-    <svg width="13" height="13" class="modal-more__icon">
-      <use href="./images/icons.svg#icon-close-line"></use>
-    </svg>
-  </button>
+<div class="modal-more modal js-modal" data-modal="read-more">
+
+  <svg width="13" height="13" class="modal-more__icon js-modal-close">
+    <use href="./images/icons.svg#icon-close-line"></use>
+  </svg>
+
   <h2 class="modal-more__title">
     How it’s made?</h2>
+
   <div class="modal-more__video">
     <iframe class="modal-more__player" width="100%" height="315"
       src="https://www.youtube.com/embed/uRlvaqqVaWQ"
@@ -16,6 +21,7 @@
         web-share" allowfullscreen>
     </iframe>
   </div>
+
   <p class="modal-more__text">Lorem ipsum dolor sit amet consectetur
     adipisicing elit. Aspernatur beatae voluptatibus
     porro, tenetur tempore, natus adipisci iusto
@@ -23,4 +29,5 @@
     vero veritatis deleniti.
     Harum eveniet amet dicta excepturi?
   </p>
+
 </div>

@@ -18,55 +18,59 @@
     width: 568px;
     padding: 32px 60px;
   }
-}
-.modal-map__close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 13px;
-  height: 13px;
-  background-color: transparent;
-  border: none;
-}
-.modal-map__icon {
-  fill: #131313;
-}
-.modal-map__title {
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: 'Seymour One';
-  font-style: Book;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #131313;
-  @include tablet {
-    margin-bottom: 32px;
-    font-size: 20px;
-    line-height: 1.4;
+  &__icon {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 11px;
+    height: 11px;
+    fill: #131313;
+    @include tablet {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: Book;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #131313;
+    @include tablet {
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  &__viewer {
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+  }
+  &__button {
+    display: block;
+    width: 134px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #131313;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    border: none;
+    @include tablet {
+      width: 145px;
+      font-size: 14px;
+      line-height: 1.21;
+    }
   }
 }
-.modal-map__viewer {
-  margin-bottom: 24px;
-  @include tablet {
-    margin-bottom: 32px;
-  }
-}
-.modal-map__button {
-  width: 134px;
-  height: 42px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: #131313;
-  background-color: #F8D24E;
-  border-radius: 10px;
-  border: none;
-  @include tablet {
-    width: 145px;
-    font-size: 14px;
-    line-height: 1.21;
-  }
-}
+
+
+

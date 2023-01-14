@@ -1,3 +1,7 @@
+.franchise-test {
+  width: 200px;
+  height: 30px;
+}
 
 .modal-franchise {
   position: absolute;
@@ -18,17 +22,17 @@
     width: 568px;
     padding: 32px 60px;
   }
-  &__close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 13px;
-    height: 13px;
-    background-color: transparent;
-    border: none;
-  }
   &__icon {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 11px;
+    height: 11px;
     fill: #131313;
+    @include tablet {
+      width: 13px;
+      height: 13px;
+    }
   }
   &__title {
     margin-bottom: 20px;
@@ -72,8 +76,8 @@
     font-size: 12px;
     line-height: 1.4;
     color: #131313;
-    border: 1px solid #84A178;
-    border-radius: 10px;    
+    border: 1px solid #84a178;
+    border-radius: 10px;
     background-color: rgba(248, 210, 78, 0.1);
     @include tablet {
       width: 368px;
@@ -92,8 +96,8 @@
     font-size: 12px;
     line-height: 1.4;
     color: #131313;
-    border: 1px solid #84A178;
-    border-radius: 10px;  
+    border: 1px solid #84a178;
+    border-radius: 10px;
     background-color: rgba(248, 210, 78, 0.1);
     @include tablet {
       width: 368px;
@@ -113,7 +117,7 @@
     font-size: 12px;
     line-height: 1.25;
     color: #131313;
-    background-color: #F8D24E;
+    background-color: #f8d24e;
     border-radius: 10px;
     border: none;
     @include tablet {
