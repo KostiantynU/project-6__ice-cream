@@ -146,7 +146,7 @@
 .btn-close-menu__icon {
   width: 32px;
   height: 32px;
-  fill: $modal-bg-color;
+  fill: $secondary-text-color;
 }
 
 .mobile-nav__content {
@@ -180,7 +180,7 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.21;
-  color: $modal-bg-color;
+  color: $secondary-text-color;
 
   &:hover {
     color: $accent-color;
@@ -318,9 +318,6 @@
     }
   }
 }
-
-
-
 
 .hero-details__arrow {
   fill: $secondary-text-color;
@@ -480,4 +477,3 @@
 .hero-details__text {
   margin-bottom: 24px;
 }
-
