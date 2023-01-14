@@ -1,14 +1,3 @@
-/* Змінні */
-$bg-color: #84a178;
-$accent-color: #f8d24e;
-$enabled-color: #0a8817;
-$disabled-color: #ababab;
-$text-dark-color: #131313;
-$text-light-color: #fcfcfc;
-$ice-cream-color: #AEC6A5;
-$ice-coffee-color: #EFD478;
-$milkshakes-color: #D6936D;
-
 /* Секція Контакти */
 
 .contacts {
@@ -44,7 +33,7 @@ $milkshakes-color: #D6936D;
         letter-spacing: 0.04em;
         margin: 0 auto;
         padding: 40px 32px 24px;
-        background-color: $text-light-color;
+        background-color: $modal-bg-color;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
 
@@ -100,7 +89,7 @@ $milkshakes-color: #D6936D;
     }
 
     &__location {
-        color: $milkshakes-color;
+        color: $address-color;
         height: 40px;
 
         @include tablet {
@@ -129,7 +118,7 @@ $milkshakes-color: #D6936D;
     }
 
     &__time {
-        color: $disabled-color;
+        color: $work-hours-color;
     }
 
     &__time:not(:last-child) {
