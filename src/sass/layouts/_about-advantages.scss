@@ -1,4 +1,25 @@
-p {
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 178px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.abouts__text-info {
   @include tablet {
     margin-bottom: 8px;
   }
@@ -15,13 +36,13 @@ p {
   &__label {
     @include tablet {
       font-size: 22px;
-      line-height: 27px;
+      line-height: 1.22;
     }
 
     @include desktop {
       font-weight: 800;
       font-size: 30px;
-      line-height: 37px;
+      line-height: 1.68;
     }
 
     // @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -40,24 +61,24 @@ p {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #fcfcfc;
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 
   &__title {
     @include tablet {
       font-size: 34px;
-      line-height: 43px;
+      line-height: 1.26;
       width: 100%;
     }
     @include desktop {
       font-size: 36px;
-      line-height: 45px;
+      line-height: 1.25;
       width: 100%;
     }
     margin-left: auto;
@@ -72,7 +93,7 @@ p {
     font-weight: 400;
 
     font-size: 30px;
-    line-height: 38px;
+    line-height: 1.26;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -142,8 +163,7 @@ p {
     font-weight: 400;
 
     font-size: 12px;
-    line-height: 176%;
-    /* or 28px */
+    line-height: 2.33;
     // margin-bottom: 8px;
     letter-spacing: 0.04em;
 
@@ -168,8 +188,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 194%;
-    /* or 27px */
+    line-height: 2.25;
 
     letter-spacing: 0.04em;
     margin-left: auto;
@@ -199,8 +218,7 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 194%;
-    /* or 27px */
+    line-height: 1.92;
     // margin-top: 8px;
     letter-spacing: 0.04em;
     text-decoration: none;
@@ -303,7 +321,7 @@ p {
   &__heading {
     @include tablet {
       font-size: 48px;
-      line-height: 59px;
+      line-height: 1.22;
       margin-top: 32px;
     }
     @include desktop {
@@ -315,8 +333,7 @@ p {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
+    line-height: 1.22;
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -326,6 +343,10 @@ p {
 
     color: #fcfcfc;
   }
+
+  // .abouts__text:nth-last-child(2) {
+  //   margin-bottom: 32px;
+  // }
 
   &__text {
     @include tablet {
@@ -350,8 +371,7 @@ p {
 
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
-    /* or 28px */
+    line-height: 1.76;
 
     text-align: center;
     letter-spacing: 0.02em;
