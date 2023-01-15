@@ -6,17 +6,17 @@
   width: 100%;
   height: auto;
   padding: 28px;
-  color: #131313;
+  color: $primary-text-color;
   transform: translate(-50%, -50%) scale(1);
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background-color: $secondary-text-color;
+  border: 2px solid $accent-color;
   border-radius: 10px;
 
   opacity: 0;
   visibility: hidden;
-  transition: transform 5000ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include mobile {
     width: 480px;
   }
@@ -35,7 +35,7 @@
     right: 17px;
     width: 11px;
     height: 11px;
-    fill: #131313;
+    fill: $primary-text-color;
     @include tablet {
       width: 13px;
       height: 13px;
@@ -45,10 +45,11 @@
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Seymour One';
-    font-style: Book;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #131313;
+    color: $primary-text-color;
     @include tablet {
       margin-bottom: 32px;
       font-size: 20px;
@@ -68,11 +69,12 @@
     margin-left: auto;
     margin-right: auto;
     font-family: Montserrat;
+    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
-    color: #131313;
-    background-color: #F8D24E;
+    color: $primary-text-color;
+    background-color: $accent-color;
     border-radius: 10px;
     border: none;
     @include tablet {
