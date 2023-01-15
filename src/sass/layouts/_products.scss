@@ -1,5 +1,5 @@
 .products {
-    padding: 60px 16px;
+    padding: 60px 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -21,16 +21,25 @@
 .products__list {
     width: auto;
     height: auto;
-    margin-top: 303px;
+    display: flex;
+    gap: 168px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 146px;
+    
 
     @media screen and (min-width:768px) {
-        display: flex;
         gap: 16px;
+        margin-top: 200px;
+        flex-direction: unset;
+        align-items: center;
     }
 
     @media screen and (min-width:1200px) {
-        display: flex;
         gap: 29px;
+        margin-top: 303px;
+        flex-direction: unset;
+        align-items: center;
     }
 
     li {
@@ -48,6 +57,7 @@
 
         @media screen and (min-width:1200px) {
             width: 370px;
+            box-sizing: content-box;
         }
     }
 }
@@ -171,34 +181,64 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 18px;
     line-height: 1;
-    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
+    @media screen and (min-width:768px) {
+    font-size: 22px;
+    }
+        
+    @media screen and (min-width:1200px) {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    }
 }
 
 .products__title {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1;
-    letter-spacing: 0.06em;
     margin-top: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width:768px) {
+    font-size: 34px;
+    }
+        
+    @media screen and (min-width:1200px) {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    }
 }
 
 .products__text-items {
+    margin-top: 126px;
+
+    @media screen and (min-width:768px) {
+    margin-top: 108px;
+    }
+        
+    @media screen and (min-width:1200px) {
     margin-top: 165px;
+    }
 }
 
 .products__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
     text-align: center;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width:1200px) {
+    font-size: 16px;
+    }
 }
 
 .products__text-box {
@@ -206,14 +246,15 @@
     margin-right: auto;
     text-align: center;
     width: 200px;
-    margin-top: 66px;
+    margin-top: 40px;
 
     @media screen and (min-width:768px) {
         width: 172px;
     }
 
     @media screen and (min-width:1200px) {
-        width: 246px;
+        width: 244px;
+        margin-top: 66px;
     }
 }
 
