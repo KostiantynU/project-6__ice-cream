@@ -15,12 +15,25 @@
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 5000ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @include mobile {
     width: 480px;
   }
   @include tablet {
     width: 568px;
     padding: 32px 60px;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.2);
   }
   &__icon {
     position: absolute;
