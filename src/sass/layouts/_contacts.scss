@@ -1,6 +1,16 @@
 /* Секція Контакти */
 
 .contacts {
+  transform: translateY(-25%);
+
+  @include tablet {
+    transform: translateY(-48%);
+  }
+
+  @include desktop {
+    transform: translateY(-34%);
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -110,6 +120,7 @@
   &__location:hover,
   &__location:focus {
     text-decoration: underline;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
   }
 
   &__schedule {
@@ -145,6 +156,11 @@
       gap: 4px;
       line-height: 1.5;
     }
+  }
+
+  &__tel,
+  &__mail {
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
   }
 
   &__address::after,
