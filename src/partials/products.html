@@ -1,5 +1,3 @@
-
-
 <button type="button" class="js-open-modal" data-modal="modal">
   modal with info
 </button>
@@ -12,40 +10,51 @@
       </svg>
     </button>
     <p class="modal__title">Chololate icecream</p>
-    <ul>
-      <li>320</li>
-      <li>4g</li>
-      <li>8,2g</li>
-      <li>40,4g</li>
+    <div class="modal__gradient">
+      <div class="modal__image">
+        <picture>
+          <source srcset="./images/products/modal_icecream.png 1x,./images/products/modal_icecream@2x.png 2x"/>
+          <img src="./images/products/modal_icecream.png" alt="icecream" />
+        </picture>
+       </div>
+    </div>
+    <div class="modal__product"> 
+      <ul class="modal__composition">
+      <li class="modal__quantity">320</li>
+      <li class="modal__quantity">4g</li>
+      <li class="modal__quantity">8,2g</li>
+      <li class="modal__quantity">40,4g</li>
     </ul>
-    <ul>
-      <li>kcal</li>
-      <li>Prote...</li>
-      <li>Fats</li>
-      <li>Carbs</li>
-    </ul>
-    <p>Ingridiens</p>
-    <ul>
-      <li>Milk</li>
-      <li>Belgian chocolate</li>
-      <li>Cream</li>
-      <li>Cocoa powder</li>
-      <li>Sugar</li>
-      <li>Vanila sugar</li>
-    </ul>
-    <ul>
-      <li>100ml</li>
-      <li>20g</li>
-      <li>150ml</li>
-      <li>30g</li>
-      <li>40g</li>
-      <li>10g</li>
-    </ul>
-    <form>
-      <input type="name" name="name" placeholder="Name" />
-      <input type="tel" name="phone" placeholder="Phone" />
-      <textarea name="" placeholder="Comment"></textarea>
-      <button type="submit">Submit</button>
-    </form>
+        <ul class="modal__components">
+        <li class="modal__value">kcal</li>
+        <li class="modal__value">Prote...</li>
+        <li class="modal__value">Fats</li>
+        <li class="modal__value">Carbs</li>
+      </ul>
+    </div>
+      <p>Ingridiens</p>
+      <ul>
+        <li>Milk</li>
+        <li>Belgian chocolate</li>
+        <li>Cream</li>
+        <li>Cocoa powder</li>
+        <li>Sugar</li>
+        <li>Vanila sugar</li>
+      </ul>
+      <ul>
+        <li>100ml</li>
+        <li>20g</li>
+        <li>150ml</li>
+        <li>30g</li>
+        <li>40g</li>
+        <li>10g</li>
+      </ul>
+      <form>
+        <input type="name" name="name" placeholder="Name" />
+        <input type="tel" name="phone" placeholder="Phone" />
+        <textarea name="" placeholder="Comment"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
