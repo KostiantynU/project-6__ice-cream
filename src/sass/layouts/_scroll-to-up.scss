@@ -1,0 +1,17 @@
+#scrollTop {
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  z-index: 999;
+  color: $accent-color;
+  font-size: 30px;
+}
+
+.is-vissible {
+  opacity: 1;
+  transition: opacity $time-duration $time-function;
+
+  &--hide {
+    opacity: 0;
+  }
+}
