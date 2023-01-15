@@ -1,4 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Default for body */
 body {
   height: 5000px;
