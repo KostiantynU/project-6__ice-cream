@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   width: 280px;
-  padding: 32px 40px;
+  padding: 28px 20px;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   background-color: $secondary-text-color;
@@ -56,6 +56,10 @@
     margin: 0 auto;
   }
 
+  // &__product {
+  //   margin: 0px -10px;
+  // }
+
   &__composition {
     display: flex;
     align-items: center;
@@ -81,6 +85,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 53px;
+      height: 72px;
+      border-radius: 40px;
+      border: 2px solid #9cbe8f;
+      top: -1px;
+    }
   }
 
   &__components {
@@ -98,15 +111,9 @@
     line-height: 1.2;
     color: $primary-text-color;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    // border: 2px solid #9cbe8f;
-    // border-radius: 40px;
-    // position: absolute;
-    // width: 53px;
-    // height: 72px;
-    // top: 265px;
-    margin-top: 16px;
+    text-align: center;
+    position: relative;
+    margin: 8px;
   }
 
   &__ingridiens {
@@ -118,6 +125,60 @@
     color: $primary-text-color;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $primary-text-color;
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 42px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 84px;
+    padding-top: 11px;
+    padding-left: 11px;
+    resize: none;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+  }
+
+  &__button-submit {
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+    }
+    display: flex;
+    width: 132px;
+    height: 42px;
+    font-size: 14px;
+    font-family: inherit;
+    color: $primary-text-color;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: 1px solid $accent-color;
+    align-items: center;
+    justify-content: center;
   }
 }
 
