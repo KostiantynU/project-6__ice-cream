@@ -5,4 +5,8 @@ window.onscroll = () => {
   } else if (window.scrollY < 700) {
     scrolBtn.classList.add('is-vissible--hide');
   }
+
+  scrolBtn.onclick = () => {
+    window.scrollTo(0, 0);
+  };
 };
