@@ -128,7 +128,7 @@
 .mobile-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-100%);
+  transform: translateX(100%);
 }
 
 .mobile-menu__control {
@@ -234,6 +234,8 @@
 
 // Section HERO
 .hero {
+  position: relative;
+  
   padding-top: 50px;
   padding-bottom: 236px;
 
@@ -252,78 +254,99 @@
   }
 }
 
-.hero {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #84a178;
-  background-image: url(/src/images/hero-header/hero__bg-img-320-x1.png),
-    url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
-      url(/src/images/hero-header/hero__bg-img-320-x2.png);
-  }
-
-  background-size: 177px, 100% 50px;
-
-  background-repeat: no-repeat;
-
-  background-position: bottom center, 100% 100%;
-
-  @media screen and (min-width: 480px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png),
-      url(/src/images/hero-header/hero__bg-img-480-x1.png);
-    background-size: 218px, 330px;
-    background-position: 90% 100%, 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
-        url(/src/images/hero-header/hero__bg-img-480-x2.png);
+.hero-bg__ice-cream{
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  right: 30px;
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
+    .hero:hover &{
+      tratransform: translateY(-100%);
+      opacity: 1;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x1.png),
-      url(/src/images/hero-header/hero__many-ice-cream-tablet-x1.png),
-      url(/src/images/hero-header/hero__bg-img-tablet-x1.png);
-    background-size: 268px, 152px, 100%;
-    background-position: right 92px bottom 0, 32px 185px, 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x2.png),
-        url(/src/images/hero-header/hero__many-ice-cream-tablet-x2.png),
-        url(/src/images/hero-header/hero__bg-img-tablet-x2.png);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x1.png),
-      url(/src/images/hero-header/hero__many-ice-cream__desktop-x1.png),
-      url(/src/images/hero-header/hero__bg-img-desktop-x1.png);
-    background-size: 456px 560px, 225px, 100% 383px;
-    background-position: right 92px bottom 0, left 16px bottom 65px, 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x2.png),
-        url(/src/images/hero-header/hero__many-ice-cream__desktop-x2.png),
-        url(/src/images/hero-header/hero__bg-img-desktop-x2.png);
-    }
-  }
 }
+
+.hero:hover &{
+  tratransform: translateY(-100%);
+  opacity: 1;
+}
+
+// .hero {
+
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   background-color: #84a178;
+//   background-image: url(/src/images/hero-header/hero__bg-img-320-x1.png),
+//     url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png);
+
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
+//       url(/src/images/hero-header/hero__bg-img-320-x2.png);
+//   }
+
+//   background-size: 177px, 100% 50px;
+
+//   background-repeat: no-repeat;
+
+//   background-position: bottom center, 100% 100%;
+
+//   @media screen and (min-width: 480px) {
+//     background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png),
+//       url(/src/images/hero-header/hero__bg-img-480-x1.png);
+//    background-position: 100% 100%, 100% 100%;
+//     background-size: 218px 267px, 294px;
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
+//         url(/src/images/hero-header/hero__bg-img-480-x2.png);
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x1.png),
+//       url(/src/images/hero-header/hero__many-ice-cream-tablet-x1.png),
+//       url(/src/images/hero-header/hero__bg-img-tablet-x1.png);
+//     background-size: 268px, 152px, 100%;
+//     background-position: right 92px bottom 0, left 31px bottom 12px, 100% 100%;
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x2.png),
+//         url(/src/images/hero-header/hero__many-ice-cream-tablet-x2.png),
+//         url(/src/images/hero-header/hero__bg-img-tablet-x2.png);
+//     }
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x1.png),
+//       url(/src/images/hero-header/hero__many-ice-cream__desktop-x1.png),
+//       url(/src/images/hero-header/hero__bg-img-desktop-x1.png);
+//     background-size: 456px 560px, 225px, 100% 383px;
+//     background-position: right 92px bottom 0, left 16px bottom 65px, 100% 100%;
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x2.png),
+//         url(/src/images/hero-header/hero__many-ice-cream__desktop-x2.png),
+//         url(/src/images/hero-header/hero__bg-img-desktop-x2.png);
+//     }
+//   }
+// }
 
 .hero-details__arrow {
   fill: $secondary-text-color;
 }
 
-.hero__title {
+.hero-title {
   display: block;
   width: 247px;
   height: auto;
@@ -350,6 +373,16 @@
     line-height: 1.26;
 
     margin-bottom: 28px;
+  }
+
+  &__passion {
+    font-size: 34px;
+    line-height: 0.97;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      line-height: 1.26;
+    }
   }
 }
 
