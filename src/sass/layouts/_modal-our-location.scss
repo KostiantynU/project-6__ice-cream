@@ -1,0 +1,89 @@
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  padding: 28px;
+  color: $primary-text-color;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: $secondary-text-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 568px;
+    padding: 32px 60px;
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &__icon {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 11px;
+    height: 11px;
+    fill: $primary-text-color;
+    @include tablet {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-text-color;
+    @include tablet {
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  &__viewer {
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+  }
+  &__button {
+    display: block;
+    width: 134px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: $primary-text-color;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: none;
+    @include tablet {
+      width: 145px;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
+}
+
+
+
