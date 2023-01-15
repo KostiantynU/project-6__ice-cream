@@ -8,46 +8,46 @@ p {
   margin-bottom: 16px;
 }
 
-.aboust {
+.abouts {
   width: 100%;
   height: auto;
-}
 
-.abouts__label {
-  @include tablet {
-    font-size: 22px;
-    line-height: 27px;
-  }
+  &__label {
+    @include tablet {
+      font-size: 22px;
+      line-height: 27px;
+    }
 
-  @include desktop {
+    @include desktop {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    // @media screen and (min-width: 480px) and (max-width: 767px) {
+    //   font-weight: 800;
+    //   font-size: 30px;
+    //   line-height: 37px;
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //   font-size: 22px;
+    //   line-height: 27px;
+    // }
+
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+    margin-top: 60px;
   }
-
-  // @media screen and (min-width: 480px) and (max-width: 767px) {
-  //   font-weight: 800;
-  //   font-size: 30px;
-  //   line-height: 37px;
-  // }
-
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   font-size: 22px;
-  //   line-height: 27px;
-  // }
-
-  display: block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #fcfcfc;
-  margin-top: 60px;
 }
 
 .abouts__title {
@@ -274,6 +274,13 @@ p {
 .abouts__button:hover {
   color: #000000;
   background-color: #0a8817;
+}
+
+.abouts__button:focus {
+  outline: none;
+  background-color: $btn-hover-color;
+  color: #ffffff;
+  fill: #ffffff;
 }
 
 .abouts__btn {
