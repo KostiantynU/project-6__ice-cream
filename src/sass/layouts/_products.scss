@@ -264,7 +264,7 @@
 
 .products__btn {
     position: relative;
-    bottom: -280px;
+    transform: translateY(1270%);
 
     border: none;
     background-color: inherit;
@@ -274,5 +274,13 @@
     &:hover,
     &:focus {
         fill: rgb(137, 64, 64);
+    }
+
+    @media screen and (min-width:768px) {
+    transform: translateY(1400%);
+    }
+    
+    @media screen and (min-width:1200px) {
+    transform: translateY(1500%);
     }
 }
