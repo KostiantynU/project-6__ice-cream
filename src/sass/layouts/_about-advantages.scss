@@ -40,7 +40,7 @@
     }
 
     @include desktop {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 30px;
       line-height: 1.68;
     }
@@ -355,7 +355,7 @@
       line-height: 1.74;
       font-weight: 400;
       font-size: 16px;
-      line-height: 176%;
+      line-height: 1.76;
     }
     @include desktop {
       width: auto;
@@ -363,7 +363,8 @@
       line-height: 1.76;
       font-weight: 400;
       font-size: 16px;
-      line-height: 176%;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
     }
     width: 230px;
     font-family: 'Montserrat';
@@ -374,7 +375,7 @@
     line-height: 1.76;
 
     text-align: center;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
 
     margin-left: auto;
     margin-right: auto;
