@@ -1,6 +1,7 @@
 
 .modal-map {
   position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -11,6 +12,7 @@
   background-color: $secondary-text-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
+  z-index: 30;
 
   opacity: 0;
   visibility: hidden;
