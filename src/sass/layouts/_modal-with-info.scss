@@ -20,8 +20,10 @@
   left: 50%;
   width: 280px;
   height: auto;
+  z-index: 30;
   padding: 28px 20px;
   border-radius: 10px;
+  border-color: $accent-color;
   transform: translate(-50%, -50%);
   background-color: $secondary-text-color;
 
@@ -119,7 +121,7 @@
     justify-content: center;
     position: relative;
     &::after {
-      content: '';
+      content: '320';
       position: absolute;
       width: 53px;
       height: 72px;
@@ -142,6 +144,11 @@
         top: -1px;
       }
     }
+  }
+
+  &__additional {
+    position: absolute;
+    top: 52px;
   }
 
   &__components {
@@ -267,11 +274,6 @@
   }
 }
 
-@include tablet {
-  .modal__value:not(:last-child) {
-    margin-left: 1px;
-  }
-}
 // .modal__product:not(:last-child) {
 //   padding-left: 12px;
 // }
@@ -313,3 +315,8 @@
 //     right: 5px;
 //   }
 // }
+
+.tes {
+  position: absolute;
+  top: 52px;
+}
