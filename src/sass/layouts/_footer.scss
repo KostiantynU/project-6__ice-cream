@@ -135,11 +135,14 @@
         @media screen and (min-width: 768px){
             font-size: 14px;
             line-height: 1.85;
-            width: 290px;
+            width: 310px;
         }
 
         @media screen and (min-width: 1200px){
-
+            font-size: 16px;
+            line-height: 186%;
+            letter-spacing: 0.02em;
+            width: 340px;
         }
     }
     &__span{
