@@ -32,8 +32,7 @@
 .abouts {
   width: 100%;
   height: auto;
-  // padding-top: 60px;
-  padding-top: 61px;
+  padding-top: 60px;
 
   &__label {
     @include tablet {
@@ -46,18 +45,6 @@
       font-size: 30px;
       line-height: 1.68;
     }
-
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //   font-weight: 800;
-    //   font-size: 30px;
-    //   line-height: 37px;
-    // }
-
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //   font-size: 22px;
-    //   line-height: 27px;
-    // }
-
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
@@ -69,7 +56,6 @@
     text-transform: uppercase;
 
     color: #fcfcfc;
-    // margin-top: 60px;
   }
 
   &__title {
@@ -86,7 +72,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    // height: 45px;
     left: 360px;
     top: 109px;
 
@@ -154,7 +139,6 @@
       font-size: 16px;
     }
     width: 220px;
-    // height: 111px;
     left: 616px;
     top: 326px;
 
@@ -167,11 +151,9 @@
 
     font-size: 12px;
     line-height: 2.33;
-    // margin-bottom: 8px;
     letter-spacing: 0.04em;
 
     color: #fcfcfc;
-    // margin-right: 121px;
   }
 
   &__addition {
@@ -185,7 +167,6 @@
       line-height: 1.94;
     }
     width: 220px;
-    // height: 107px;
     left: 616px;
     top: 445px;
 
@@ -225,7 +206,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.92;
-    // margin-top: 8px;
     letter-spacing: 0.04em;
     text-decoration: none;
 
@@ -260,14 +240,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
-
-    // text-align: center;
   }
 
   &__button {
-    // @include tablet {
-    //   margin-top: 54px;
-    // }
     @include desktop {
       margin-top: 54px;
     }
@@ -384,7 +359,6 @@
     line-height: 1.76;
 
     text-align: center;
-    // letter-spacing: 0.02em;
 
     margin-left: auto;
     margin-right: auto;
@@ -425,9 +399,7 @@
 
   &__features {
     margin-bottom: 32px;
-    // @include tablet {
-    //   margin-right: 30px;
-    // }
+
     @include desktop {
       margin-right: 30px;
       margin-bottom: 0;
@@ -436,7 +408,6 @@
       margin-right: 30px;
       margin-bottom: 0;
     }
-    // margin-right: 30px;
   }
 
   // &__features:last-child {
