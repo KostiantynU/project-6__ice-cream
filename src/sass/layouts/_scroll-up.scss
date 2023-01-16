@@ -15,7 +15,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
-  transition: all 200ms linear;
+  transition: $time-duration $time-function;
 }
 .scroll-up--active {
   opacity: 1;
@@ -26,9 +26,9 @@
   position: absolute;
   content: '↑';
   text-align: center;
-  line-height: 46px;
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.3); /* --- Pijl kleur --- */
+  line-height: 40px;
+  font-size: 40px;
+  color: $accent-color;
   left: 0;
   top: 0;
   height: 46px;
@@ -36,39 +36,16 @@
   cursor: pointer;
   display: block;
   z-index: 1;
-  transition: all 200ms linear;
+  transition: $time-duration $time-function;
 }
 .scroll-up:hover::after {
-  opacity: 0;
+  color: $btn-hover-color;
 }
-.scroll-up::before {
-  position: absolute;
-  font-family: 'unicons';
-  content: '\e84b';
-  text-align: center;
-  line-height: 46px;
-  font-size: 24px;
-  opacity: 0;
-  background: black; /* --- Pijl hover kleur --- */
 
-  left: 0;
-  top: 0;
-  height: 46px;
-  width: 46px;
-  cursor: pointer;
-  display: block;
-  z-index: 2;
-  transition: all 200ms linear;
-}
-.scroll-up:hover::before {
-  opacity: 1;
-}
-.scroll-up svg path {
+.scroll-up__path {
   fill: none;
-}
-.scroll-up svg.progress-circle path {
-  stroke: rgba(0, 0, 0, 0.2); /* --- Lijn progres kleur --- */
+  stroke: $btn-hover-color;
   stroke-width: 4;
   box-sizing: border-box;
-  transition: all 200ms linear;
+  transition: $time-duration linear;
 }
