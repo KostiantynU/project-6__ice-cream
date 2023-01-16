@@ -1,24 +1,67 @@
+// header modal - buy now
+
 .header-modal {
-    position: relative;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 280px;
+    height: auto;
     padding: 28px 28px 29px;
+    color: $primary-text-color;
+    transform: translate(-50%, 30px) scale(1);
     background-color: $secondary-text-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform $time-duration $time-function,
+        opacity $time-duration $time-function,
+        visibility $time-duration $time-function;
 
     @include tablet {
+        width: 568px;
         padding: 32px 54px;
     }
 
-    &__icon-close {
+    @include desktop {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__btn-close {
         position: absolute;
-        top: 17px;
-        right: 17px;
-        width: 11px;
-        height: 11px;
+        display: flex;
+        top: 12px;
+        right: 12px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 0;
         fill: $primary-text-color;
+        transition: fill $time-duration $time-function;
+        cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+        padding: 0;
+        margin: 0;
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
 
         @include tablet {
-            width: 13px;
-            height: 13px;
+            width: 24px;
+            height: 24px;
         }
+    }
+
+    &__icon-close {
+        height: inherit;
     }
 
     &__title {
@@ -31,7 +74,7 @@
         line-height: 1.5;
 
         @include tablet {
-            font-size: 40;
+            font-size: 20;
             line-height: 1.4;
             margin-bottom: 103px;
         }
@@ -41,7 +84,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 84px;
+        gap: 82px;
         margin-bottom: 31px;
 
         @include tablet {
@@ -57,20 +100,16 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        padding-bottom: 21px;
+        padding-bottom: 20px;
         width: 132px;
         height: 136px;
         border: solid 2px;
         border-radius: 10px;
         color: $primary-text-color;
-
-        // font-family: 'Seymour One', sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.25;
-        font-style: bold;
         text-transform: uppercase;
-        text-align: center;
 
         @include tablet {
             height: 135px;
@@ -102,16 +141,7 @@
     top: -7px;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__product:focus .product-img,
-&__product:hover .product-img {
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $time-duration $time-function;
 }
 
 &__product:before {
@@ -135,7 +165,7 @@
             rgba(156, 190, 143, 0.7),
             rgba(156, 190, 143, 0.7)),
         $btn-slider-color;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 &__product--icecoffee {
@@ -147,7 +177,7 @@
             rgba(248, 210, 78, 0.7),
             rgba(248, 210, 78, 0.7)),
         $btn-slider-color;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 &__product--milkshake {
@@ -159,9 +189,8 @@
             rgba(213, 117, 63, 0.7),
             rgba(213, 117, 63, 0.7)),
         $btn-slider-color;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
-
 
 &__form {
     color: $primary-text-color;
@@ -171,7 +200,7 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    width: 224px;
     height: 32px;
     margin-bottom: 12px;
     padding: 8px 12px;
@@ -215,32 +244,29 @@
 
 &__btn {
     display: flex;
-    width: 114px;
-    height: 42px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 12px;
-    line-height: 1.17;
-    border: none;
-
-    width: 196px;
-    height: 42px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    width: 114px;
+    height: 42px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
     border: 0;
     border-radius: 10px;
     background-color: $accent-color;
     color: $primary-text-color;
     fill: $primary-text-color;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 600;
-    line-height: 1.29;
     cursor: url(https://svgshare.com/i/pX4.svg), pointer;
     transition: background-color $time-duration $time-function,
         color $time-duration $time-function,
         fill $time-duration $time-function;
+
+    @include tablet {
+        width: 121px;
+        font-size: 14px;
+        line-height: 1.22;
+    }
 
     &:hover {
         background-color: $btn-hover-color;

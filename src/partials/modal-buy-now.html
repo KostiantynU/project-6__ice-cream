@@ -1,5 +1,6 @@
-<div class="modal header-modal" data-modal="1">
-    <button type="button" class="header-modal__cross js-modal-close">
+<!-- Modal Buy Now -->
+<div class="header-modal modal js-modal" data-modal="modal-buy-now">
+    <button type="button" class="header-modal__btn-close js-modal-close">
         <svg class="header-modal__icon-close">
             <use href="./images/icons.svg#icon-close-line"></use>
         </svg>
@@ -7,49 +8,52 @@
     <h2 class="header-modal__title">Buy now</h2>
     <ul class="header-modal__list">
         <li class="header-modal__item">
-            <label class="header-modal__label">
+            <label>
                 <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream" />
-                <span class="header-modal__product header-modal__product--icecream">
+                <p class="header-modal__product header-modal__product--icecream">
                     ice cream
                     <img class="header-modal__img"
                         srcset="./images/modal-buy-now/modal-icecream_1x-min.png 1x, ./images/modal-buy-now/modal-icecream_1x-min.png 2x"
                         src="./images/modal-buy-now/modal-icecream_1x-min.png" alt="ice-cream">
-                </span>
+                </p>
             </label>
         </li>
         <li class="header-modal__item">
-            <label class="header-modal__label">
+            <label>
                 <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe" />
-                <span class="header-modal__product header-modal__product--icecoffee">
+                <p class="header-modal__product header-modal__product--icecoffee">
                     ice coffe
                     <img class="header-modal__img"
                         srcset="./images/modal-buy-now/modal-icecoffee_1x-min.png 1x, ./images/modal-buy-now/modal-icecoffee_1x-min.png 2x"
                         src="./images/modal-buy-now/modal-icecoffee_1x-min.png" alt="ice-coffee">
-                </span>
+                </p>
             </label>
         </li>
         <li class="header-modal__item">
-            <label class="header-modal__label">
+            <label>
                 <input class="header-modal__checkbox" type="checkbox" name="product" value="milkshake" />
-                <span class="header-modal__product header-modal__product--milkshake">milkshake
+                <p class="header-modal__product header-modal__product--milkshake">milkshake
                     <img class="header-modal__img"
                         srcset="./images/modal-buy-now/modal-milkshake_1x-min.png 1x, ./images/modal-buy-now/modal-milkshake_1x-min.png 2x"
                         src="./images/modal-buy-now/modal-milkshake_1x-min.png" alt=" milkshake">
-                </span>
+                </p>
             </label>
         </li>
     </ul>
-
-
     <form class="header-modal__form">
-        <input class="header-modal__input buynow-js" type="text" placeholder="Name" maxlength="30" pattern="^[a-zA-Z]+$"
-            title="Only letters without numbers and special symbols" required />
-        <input class="header-modal__input buynow-js" type="tel" placeholder="Phone"
-            pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$" title="+38 (000) 000-00-00" required />
+        <input class="header-modal__input" type="text" placeholder="Name" minlength="2" maxlength="30"
+            pattern="^[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ]+$" title="Only letters without numbers" id="txt"
+            onkeyup="manage(this)" autofocus required />
+        <input class="header-modal__input" type="tel" placeholder="Phone"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13"
+            title="+380 (12) 345-67-89" required />
         <textarea class="header-modal__input header-modal__comment" name="comment" placeholder="Comment" cols="30"
             rows="10"></textarea>
-        <button class="header-modal__btn buynow-button-js" type="submit">
+        <button class="header-modal__btn" id="btSubmit" disabled type="submit">
             Submit
         </button>
     </form>
 </div>
+
+<!-- Скрипт на Disabled button -->
+<script src="./js/disabled-btn.js"></script>
