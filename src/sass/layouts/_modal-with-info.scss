@@ -98,8 +98,14 @@
     text-align: center;
     justify-content: space-between;
     margin-top: 22px;
+    @include mobile{
+      display: flex;
+      gap: 10px;
+    }
     @include tablet {
       margin-top: 24px;
+      display: flex;
+      gap: 20px;
     }
   }
 
@@ -121,7 +127,7 @@
     justify-content: center;
     position: relative;
     &::after {
-      content: '320';
+      content: '';
       position: absolute;
       width: 53px;
       height: 72px;
@@ -148,7 +154,11 @@
 
   &__additional {
     position: absolute;
-    top: 52px;
+    top: 40px;
+    @include tablet {
+      position: absolute;
+      top: 52px;
+    }
   }
 
   &__components {
