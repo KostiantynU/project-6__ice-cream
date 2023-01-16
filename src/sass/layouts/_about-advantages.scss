@@ -1,18 +1,18 @@
 @media screen and (min-width: 480px) {
-  .container {
+  .abouts {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {
-    .container {
+    .abouts {
       padding-top: 60px;
       padding-bottom: 204px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    .container {
+    .abouts {
       padding-top: 60px;
       padding-bottom: 178px;
     }
@@ -32,6 +32,7 @@
 .abouts {
   width: 100%;
   height: auto;
+  padding-top: 61px;
 
   &__label {
     @include tablet {
@@ -59,7 +60,7 @@
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
     text-align: center;
@@ -145,6 +146,7 @@
     @include tablet {
       width: 100%;
       font-size: 12px;
+      line-height: 1.76;
       margin-right: 34px;
     }
     @include desktop {
@@ -175,9 +177,11 @@
     @include tablet {
       font-size: 12px;
       width: 100%;
+      line-height: 1.76;
     }
     @include desktop {
       font-size: 14px;
+      line-height: 1.94;
     }
     width: 220px;
     // height: 107px;
@@ -205,6 +209,7 @@
     @include tablet {
       font-size: 12px;
       width: 100%;
+      line-height: 1.94;
     }
     @include desktop {
       font-size: 14px;
@@ -264,6 +269,9 @@
     // }
     @include desktop {
       margin-top: 54px;
+    }
+    @include tablet {
+      margin-top: 32px;
     }
     width: 164px;
     height: 42px;
@@ -352,9 +360,9 @@
     @include tablet {
       width: auto;
       font-size: 14px;
-      line-height: 1.74;
+      line-height: 1.76;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.76;
     }
     @include desktop {
