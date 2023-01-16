@@ -145,9 +145,11 @@
             width: 340px;
         }
     }
-    &__span{
+    &__tel{
         color: $secondary-text-color;
+        display: inline-block;
     }
+   
 }
 
 .soc{ 
