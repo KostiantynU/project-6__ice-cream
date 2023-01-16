@@ -2,6 +2,9 @@
     background-image: url(../images/Backgroud__mobile-x1.png);
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 393px;
+    padding-top: 178px;
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -9,8 +12,14 @@
 
     }
 
+    @media screen and (min-width: 480px) {
+        padding-bottom: 409px;
+    }
+
     @media screen and (min-width: 768px) {
         background-image: url(../images/Backgroud__tablet-x1.png);
+        padding-bottom: 379px;
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -21,6 +30,8 @@
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/Backgroud__desktop-x1.png);
+        padding-bottom: 228px;
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -30,23 +41,9 @@
     }
 }
 
-
 .comentary-slider {
-    padding-bottom: 393px;
-    padding-top: 178px;
     align-items: center;
     text-align: center;
-        @media screen and (min-width: 480px) {
-                padding-bottom: 409px;
-            }
-        
-            @media screen and (min-width: 768px) {
-                padding-bottom: 379px;
-            }
-        
-            @media screen and (min-width: 1200px) {
-                padding-bottom: 228px;
-            }
 }
 
 
@@ -126,6 +123,7 @@
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 12px;
 
     @media screen and (min-width: 768px) {
         padding: 28px 80px;
@@ -150,10 +148,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.85;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.87;
+        margin-bottom: 32px;
     }
 }
