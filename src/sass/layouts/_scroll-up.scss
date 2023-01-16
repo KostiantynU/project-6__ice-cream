@@ -8,7 +8,7 @@
   color: $accent-color;
   cursor: pointer;
   visibility: hidden;
-  border-radius: 50%;
+  border-radius: 50px;
   box-shadow: inset 0 0 0 4px $accent-color;
   opacity: 0;
   transition: $time-duration $time-function;
@@ -28,7 +28,7 @@
   }
 
   &:hover {
-    color: tomato;
+    color: $btn-hover-color;
   }
 }
 
@@ -41,7 +41,7 @@
 .scroll-up__path {
   box-sizing: border-box;
   fill: none;
-  stroke: orange;
+  stroke: $btn-hover-color;
   stroke-width: 4px;
-  transition: $time-duration $time-function;
+  transition: $time-duration;
 }
