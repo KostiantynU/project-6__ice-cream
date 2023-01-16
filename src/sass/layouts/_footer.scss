@@ -1,0 +1,178 @@
+.footer{
+    &__wraper{
+        @media screen and (min-width:768px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 66px;
+        }
+        @media screen and (min-width:1200px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 326px;
+        }
+    }
+    &__hr{
+        width: 100%;
+        border: 1px solid #E1E1E1;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px){
+            margin-bottom: 12px;
+        }
+
+
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: $copyright-color;
+        width: 280px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px){
+            width: 298px;
+            font-size: 14px;
+            line-height: 1.85;
+            letter-spacing: 0.02em;
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 255px;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+        }
+    }
+    
+}
+
+.block1{
+    &__text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.22;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        width: 235px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width:768px){
+            font-size: 26px;
+            line-height: 1.23;
+            letter-spacing: 0.04em;
+            width: 352px;
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1.23;
+            width: 505px;
+            margin-bottom: 14px;
+        }
+    }
+    &__titel{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        width: 200px;
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px){
+            font-size: 48px;
+            line-height: 1.22;
+            letter-spacing: 0.06em;
+            width: 352px;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-size: 58px;
+            line-height: 1.22;
+            letter-spacing: 0.06em;
+            width: 500px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.block2{
+    &__list{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        justify-content: end;
+        
+        @media screen and (min-width: 768px){
+            gap: 30px;
+            margin-bottom: 34px;
+        }
+
+        @media screen and (min-width: 1200px){
+            margin-bottom: 40px;
+        }
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.83;
+        color: $primary-text-color;
+        margin-bottom: 40px;
+        text-align: end;
+
+        @media screen and (min-width: 768px){
+            font-size: 14px;
+            line-height: 1.85;
+            width: 310px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-size: 16px;
+            line-height: 186%;
+            letter-spacing: 0.02em;
+            width: 340px;
+        }
+    }
+    &__tel{
+        color: $secondary-text-color;
+        display: inline-block;
+    }
+   
+}
+
+.soc{ 
+    &__item{
+        width: 34px;
+        height: 34px;
+    }
+    &__link{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+	    align-items: center;
+        transition:   color $time-duration $time-function ;
+        color: $primary-bg-color;
+        background-color: $accent-color;
+    }
+    &__link:hover,
+    &__link:focus{
+        color: $secondary-text-color;
+    }
+    &__icon{
+        fill: currentColor;
+    }
+}
