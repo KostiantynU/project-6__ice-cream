@@ -526,10 +526,16 @@
   font-size: 14px;
   line-height: 1.28;
 
+  transition: border-color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms,
+    color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms;
   &:hover {
-    outline: 0;
     border-color: $btn-hover-color;
   }
+  &:focus {
+    color: $secondary-text-color;
+    border-color: $btn-hover-color;
+  }
+  
 
   @media screen and (min-width: 768px) {
     margin-bottom: 39px;
