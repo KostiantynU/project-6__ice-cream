@@ -1,50 +1,86 @@
 <!-- HEADER -->
 
-<header class="nav">
-  <div class="container">
-    <a class="nav__logo" href="./index.html">
-      <picture>
-        <source srcset="./images/hero-header/logo-320.png 1x, ./images/hero-header/logo-320-x2.png 2x"
-          media="(max-width:480px)" />
-        <source srcset="./images/hero-header/logo.png 1x, ./images/hero-header/logo-x2.png 2x"
-          media="(max-width:1199px)" />
-        <source srcset="
-            ./images/hero-header/logo-desktop.png    1x,
-            ./images/hero-header/logo-desktop-x2.png 2x
-          " media="(min-width:1200px)" />
+<header class="nav container">
+  <a class="nav__logo" href="./index.html">
+    <picture>
+      <source srcset="
+          ./images/hero-header/logo-320.png    1x,
+          ./images/hero-header/logo-320-x2.png 2x
+        " media="(max-width:480px)" />
+      <source srcset="
+          ./images/hero-header/logo.png    1x,
+          ./images/hero-header/logo-x2.png 2x
+        " media="(max-width:1199px)" />
+      <source srcset="
+          ./images/hero-header/logo-desktop.png    1x,
+          ./images/hero-header/logo-desktop-x2.png 2x
+        " media="(min-width:1200px)" />
+      <img srcset="
+          ./images/hero-header/logo-desktop.png    1x,
+          ./images/hero-header/logo-desktop-x2.png 2x
+        " src="./images/hero-header/logo-desktop.png" alt="logo" />
+    </picture>
+  </a>
+  <nav class="nav__content">
+    <ul class="nav__list list">
+      <li class="nav__items">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+      <li class="nav__items">
+        <a href="#made" class="nav__link">How it’s made?</a>
+      </li>
+      <li class="nav__items">
+        <a href="#products" class="nav__link">Our products</a>
+      </li>
+      <li class="nav__items">
+        <a href="#contacts" class="nav__link">Contact</a>
+      </li>
+    </ul>
+    <button class="btn-open-menu" data-menu-open>
+      <svg class="btn-open-menu__icon" width="32px" height="32px">
+        <use href="./images/icons.svg#icon-menu-fill"></use>
+      </svg>
+    </button>
+    <button type="button" class="nav__btn">
+      Buy now
+      <svg width="12" height="12" class="nav__btn-arrow">
+        <use href="./images/icons.svg#icon-arrow-right-bold"></use>
+      </svg>
+    </button>
+  </nav>
+
+  <div class="mobile-menu is-hidden container" data-menu>
+    <div class="mobile-menu__control">
+      <a href="">
         <img srcset="
-            ./images/hero-header/logo-desktop.png    1x,
-            ./images/hero-header/logo-desktop-x2.png 2x
-          " src="./images/hero-header/logo-desktop.png" alt="logo" />
-      </picture>
-    </a>
-    <nav class="nav__content">
-      <ul class="nav__list list">
-        <li class="nav__items">
-          <a href="" class="nav__link">Home</a>
+            ./images/hero-header/logo.png    1x,
+            ./images/hero-header/logo-x2.png 2x
+          " src="./images/hero-header/logo.png" alt="logo" />
+      </a>
+      <button type="button" class="btn-close-menu" data-menu-close>
+        <svg class="btn-close-menu__icon">
+          <use href="./images/icons.svg#icon-close-line"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav__content">
+      <ul class="mobile-nav__list list">
+        <li class="mobile-nav__items">
+          <a href="#home" class="mobile-nav__link">Home</a>
         </li>
-        <li class="nav__items">
-          <a href="" class="nav__link">How it’s made?</a>
+        <li class="mobile-nav__items">
+          <a href="#made" class="mobile-nav__link-how">How it’s made?</a>
         </li>
-        <li class="nav__items">
-          <a href="" class="nav__link">Our products</a>
+        <li class="mobile-nav__items">
+          <a href="#products" class="mobile-nav__link">Our products</a>
         </li>
-        <li class="nav__items">
-          <a href="" class="nav__link">Contact</a>
+        <li class="mobile-nav__items">
+          <a href="#contacts" class="mobile-nav__link">Contact</a>
         </li>
       </ul>
-      <button type="button" class="buy-now__button" data-menu-open="modal-buy-now">
-        Buy now
-        <svg class="btn-open-menu__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-right-bold"></use>
-        </svg>
-      </button>
-      <button class="btn-open-menu" data-menu-open>
-        <svg class="btn-open-menu__icon" width="32px" height="32px">
-          <use href="./images/icons.svg#icon-menu-fill"></use>
-        </svg>
-      </button>
-      <!-- <button type="button" class="nav__btn">
+
+      <button type="button" class="mobile-nav__btn js-open-modal" data-modal="modal-buy-now">
         Buy now
         <svg width="12" height="12" class="nav__btn-arrow">
           <use href="./images/icons.svg#icon-arrow-right-bold"></use>
@@ -93,10 +129,12 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container">
+<div class="hero-bg container">
+  <section class="hero ">
     <div class="hero-content">
-      <h1 class="hero__title">ice cream made with passion</h1>
+      <h1 class="hero-title">
+        ice cream made with <span class="hero-title__passion"> passion </span>
+      </h1>
 
       <ul class="availability list">
         <li>
@@ -113,8 +151,10 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="hero__btn">Products</button>
-    <a href="" class="hero__link">How it’s made?</a>
+    <ul class="hero-links">
+      <li> <a href="#products" class="hero__btn">Products</a></li>
+      <li><a href="#made" class="hero__link">How it’s made?</a></li>
+    </ul>
     <div class="hero-details">
       <p class="hero-details__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -126,5 +166,44 @@
         </svg>
       </a>
     </div>
-  </div>
-</section>
+
+
+
+
+    <div>
+      <picture>
+        <source class="hero-bg__ice-cream" srcset="
+            ./images/hero-header/hero-header__ice-cream__mobile-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__mobile-x2.png 2x
+          " media="(max-width:767px)" />
+        <source class="hero-bg__ice-cream" srcset="
+            ./images/hero-header/hero-header__ice-cream__tablet-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__tablet-x2.png 2x
+          " media="(min-width:768px)" />
+        <source class="hero-bg__ice-cream" srcset="
+            ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
+          " media="(min-width:1200px)" />
+        <img class="hero-bg__ice-cream" srcset="
+            ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
+          " src="./images/hero-header/hero-header__ice-cream__desktop-x1.png" alt="bg-ice-cream" />
+      </picture>
+
+      <picture>
+        <source class="hero-bg__many-ice-cream" srcset="
+            ./images/hero-header/hero__many-ice-cream-tablet-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream-tablet-x2.png 2x
+          " media="(min-width:768px)" />
+        <source class="hero-bg__many-ice-cream" srcset="
+            ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
+          " media="(min-width:1200px)" />
+        <img class="hero-bg__many-ice-cream" srcset="
+            ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
+          " src="./images/hero-header/hero__many-ice-cream__desktop-x1.png" alt="bg-ice-cream" />
+      </picture>
+    </div>
+  </section>
+</div>
