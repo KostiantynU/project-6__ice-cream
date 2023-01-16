@@ -1,7 +1,7 @@
 /* #Progress
 ================================================== */
 
-.progress-wrap {
+.scroll-up {
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -10,20 +10,19 @@
   cursor: pointer;
   display: block;
   border-radius: 50px;
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 2px $modal-info-color;
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
-  -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.progress-wrap.active-progress {
+.scroll-up--active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-.progress-wrap::after {
+.scroll-up::after {
   position: absolute;
   content: '↑';
   text-align: center;
@@ -37,13 +36,12 @@
   cursor: pointer;
   display: block;
   z-index: 1;
-  -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.progress-wrap:hover::after {
+.scroll-up:hover::after {
   opacity: 0;
 }
-.progress-wrap::before {
+.scroll-up::before {
   position: absolute;
   font-family: 'unicons';
   content: '\e84b';
@@ -60,19 +58,17 @@
   cursor: pointer;
   display: block;
   z-index: 2;
-  -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.progress-wrap:hover::before {
+.scroll-up:hover::before {
   opacity: 1;
 }
-.progress-wrap svg path {
+.scroll-up svg path {
   fill: none;
 }
-.progress-wrap svg.progress-circle path {
+.scroll-up svg.progress-circle path {
   stroke: rgba(0, 0, 0, 0.2); /* --- Lijn progres kleur --- */
   stroke-width: 4;
   box-sizing: border-box;
-  -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }

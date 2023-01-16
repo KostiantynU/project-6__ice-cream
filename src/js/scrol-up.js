@@ -6,7 +6,7 @@
   $(document).ready(function () {
     'use strict';
 
-    const progressPath = document.querySelector('.progress-wrap path');
+    const progressPath = document.querySelector('.scroll-up path');
     const pathLength = progressPath.getTotalLength();
     progressPath.style.transition = progressPath.style.WebkitTransition =
       'none';
@@ -27,12 +27,12 @@
     const duration = 550;
     jQuery(window).on('scroll', function () {
       if (jQuery(this).scrollTop() > offset) {
-        jQuery('.progress-wrap').addClass('active-progress');
+        jQuery('.scroll-up').addClass('scroll-up--active');
       } else {
-        jQuery('.progress-wrap').removeClass('active-progress');
+        jQuery('.scroll-up').removeClass('scroll-up--active');
       }
     });
-    jQuery('.progress-wrap').on('click', function (event) {
+    jQuery('.scroll-up').on('click', function (event) {
       event.preventDefault();
       jQuery('html, body').animate({ scrollTop: 0 }, duration);
       return false;
