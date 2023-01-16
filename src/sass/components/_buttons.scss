@@ -1,0 +1,66 @@
+/* PRODUCTS button for desktop and tablet viewport */
+.products__button__all-media {
+  width: 134px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-color: $accent-color;
+  border-radius: 10px;
+  background-color: transparent;
+  color: $primary-text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  transition: border-color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms,
+    color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms;
+  &:hover {
+    border-color: $btn-hover-color;
+  }
+  &:focus {
+    color: $secondary-text-color;
+    border-color: $btn-hover-color;
+  }
+  &__disabled {
+    border-color: $work-hours-color;
+  }
+  @media screen and (max-width: 1199px) {
+    width: 108px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 1.12;
+    &:focus {
+      color: $primary-text-color;
+    }
+  }
+}
+
+/* BUY NOW button for desktop nad tablet viewport */
+.buy-now__button {
+  width: 134px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 2px solid;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: $accent-color;
+  color: $primary-text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  transition: background-color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms,
+    color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms, fill cubic-bezier(0.6, 0.3, 1, 0.49) 300ms;
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+  &:focus {
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+  }
+  &__disabled {
+    background-color: $btn-disabled-color;
+  }
+}
