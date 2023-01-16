@@ -5,17 +5,11 @@
     <a class="nav__logo" href="./index.html">
       <picture>
         <source
-          srcset="
-            ./images/hero-header/logo-320.png    1x,
-            ./images/hero-header/logo-320-x2.png 2x
-          "
+          srcset="./images/hero-header/logo-320.png 1x, ./images/hero-header/logo-320-x2.png 2x"
           media="(max-width:480px)"
         />
         <source
-          srcset="
-            ./images/hero-header/logo.png    1x,
-            ./images/hero-header/logo-x2.png 2x
-          "
+          srcset="./images/hero-header/logo.png 1x, ./images/hero-header/logo-x2.png 2x"
           media="(max-width:1199px)"
         />
         <source
@@ -50,27 +44,30 @@
           <a href="" class="nav__link">Contact</a>
         </li>
       </ul>
+      <button type="button" class="buy-now__button" data-menu-open="modal-buy-now">
+        Buy now
+        <svg class="btn-open-menu__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
       <button class="btn-open-menu" data-menu-open>
         <svg class="btn-open-menu__icon" width="32px" height="32px">
           <use href="./images/icons.svg#icon-menu-fill"></use>
         </svg>
       </button>
-      <button type="button" class="nav__btn">
+      <!-- <button type="button" class="nav__btn">
         Buy now
         <svg width="12" height="12" class="nav__btn-arrow">
           <use href="./images/icons.svg#icon-arrow-right-bold"></use>
         </svg>
-      </button>
+      </button> -->
     </nav>
 
     <div class="mobile-menu is-hidden container" data-menu>
       <div class="mobile-menu__control">
         <a href="">
           <img
-            srcset="
-              ./images/hero-header/logo.png    1x,
-              ./images/hero-header/logo-x2.png 2x
-            "
+            srcset="./images/hero-header/logo.png 1x, ./images/hero-header/logo-x2.png 2x"
             src="./images/hero-header/logo.png"
             alt="logo"
           />
@@ -134,8 +131,8 @@
     <a href="" class="hero__link">How it’s made?</a>
     <div class="hero-details">
       <p class="hero-details__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
       </p>
       <a href="">
         <svg width="40px" height="16px" class="hero-details__arrow">
