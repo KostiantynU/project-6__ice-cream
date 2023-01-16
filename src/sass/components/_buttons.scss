@@ -22,4 +22,7 @@
     color: $secondary-text-color;
     border-color: $btn-hover-color;
   }
+  &__disabled {
+    border-color: $work-hours-color;
+  }
 }

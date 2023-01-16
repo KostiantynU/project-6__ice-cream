@@ -1,0 +1,65 @@
+<button type="button" class="js-open-modal" data-modal="modal">
+    modal with info
+  </button>
+  
+  <div class="overlay js-overlay-modal">
+    <div class="modal" data-modal="modal">
+      <button type="button" class="js-modal-close">
+        <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-close-line"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Chololate icecream</p>
+      <div class="modal__gradient">
+        <div class="modal__image">
+          <picture>
+            <source srcset="./images/products/modal_icecream.png 1x,./images/products/modal_icecream@2x.png 2x" media="(max-width:1199px)"/> 
+            <source srcset="./images/products/modal_icecreamdesktop.png 1x, ./images/products/modal_icecreamdesktop@2x.png 2x" media="(min-width:1200px)">
+            <img src="./images/products/modal_icecream.png" alt="icecream" />
+         
+          </picture>
+         </div>
+      </div>
+      <div class="modal__product"> 
+        <ul class="modal__composition">
+        <li class="modal__quantity">320</li>
+        <li class="modal__quantity">4g</li>
+        <li class="modal__quantity">8,2g</li>
+        <li class="modal__quantity">40,4g</li>
+      </ul>
+          <ul class="modal__components">
+          <li class="modal__value">kcal</li>
+          <li class="modal__value">Protein..</li>
+          <li class="modal__value">Fats</li>
+          <li class="modal__value">Carbs</li>
+        </ul>
+      </div>
+        <p class="modal__ingridiens">Ingridiens</p>
+        <div class="modal__products">
+          <ul>
+            <li>Milk</li>
+            <li>Belgian chocolate</li>
+            <li>Cream</li>
+            <li>Cocoa powder</li>
+            <li>Sugar</li>
+            <li>Vanila sugar</li>
+          </ul>
+          <ul>
+            <li>100ml</li>
+            <li>20g</li>
+            <li>150ml</li>
+            <li>30g</li>
+            <li>40g</li>
+            <li>10g</li>
+          </ul>
+        </div>
+         <form class="modal__form">
+          <input type="name" name="name" placeholder="Name" class="modal__input" />
+          <input type="tel" name="phone" placeholder="Phone" class="modal__input" />
+          <textarea name="" placeholder="Comment" class="modal__textarea"></textarea>
+          <button type="submit" class="modal__button-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

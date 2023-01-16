@@ -1,0 +1,147 @@
+<!-- HEADER -->
+
+<header class="nav">
+  <div class="container">
+    <a class="nav__logo" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/logo-320.png    1x,
+            ./images/hero-header/logo-320-x2.png 2x
+          "
+          media="(max-width:480px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/logo.png    1x,
+            ./images/hero-header/logo-x2.png 2x
+          "
+          media="(max-width:1199px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/logo-desktop.png    1x,
+            ./images/hero-header/logo-desktop-x2.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          srcset="
+            ./images/hero-header/logo-desktop.png    1x,
+            ./images/hero-header/logo-desktop-x2.png 2x
+          "
+          src="./images/hero-header/logo-desktop.png"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <nav class="nav__content">
+      <ul class="nav__list list">
+        <li class="nav__items">
+          <a href="" class="nav__link">Home</a>
+        </li>
+        <li class="nav__items">
+          <a href="" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__items">
+          <a href="" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__items">
+          <a href="" class="nav__link">Contact</a>
+        </li>
+      </ul>
+      <button class="btn-open-menu" data-menu-open>
+        <svg class="btn-open-menu__icon" width="32px" height="32px">
+          <use href="./images/icons.svg#icon-menu-fill"></use>
+        </svg>
+      </button>
+      <button type="button" class="nav__btn">
+        Buy now
+        <svg width="12" height="12" class="nav__btn-arrow">
+          <use href="./images/icons.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu is-hidden container" data-menu>
+      <div class="mobile-menu__control">
+        <a href="">
+          <img
+            srcset="
+              ./images/hero-header/logo.png    1x,
+              ./images/hero-header/logo-x2.png 2x
+            "
+            src="./images/hero-header/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button type="button" class="btn-close-menu" data-menu-close>
+          <svg class="btn-close-menu__icon">
+            <use href="./images/icons.svg#icon-close-line"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav__content">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__items">
+            <a href="" class="mobile-nav__link">Home</a>
+          </li>
+          <li class="mobile-nav__items">
+            <a href="" class="mobile-nav__link-how">How it’s made?</a>
+          </li>
+          <li class="mobile-nav__items">
+            <a href="" class="mobile-nav__link">Our products</a>
+          </li>
+          <li class="mobile-nav__items">
+            <a href="" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" class="mobile-nav__btn">
+          Buy now
+          <svg width="12" height="12" class="nav__btn-arrow">
+            <use href="./images/icons.svg#icon-arrow-right-bold"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero__title">ice cream made with passion</h1>
+
+      <ul class="availability list">
+        <li>
+          <p class="availability__cafe">
+            <span class="availability__number">16</span>
+            <span class="availability__option">cafes</span>
+          </p>
+        </li>
+        <li>
+          <p class="availability__tracks">
+            <span class="availability__number">23</span>
+            <span class="availability__option">food trucks</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="hero__btn">Products</button>
+    <a href="" class="hero__link">How it’s made?</a>
+    <div class="hero-details">
+      <p class="hero-details__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a href="">
+        <svg width="40px" height="16px" class="hero-details__arrow">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

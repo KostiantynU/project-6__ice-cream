@@ -1,0 +1,76 @@
+// /* Стилі для оверлея, затінення фонового екрану. Для транзішн вказав конкретно опасіті та 
+// візібіліті, як робили в раннішніх ДЗ */
+// .overlay {
+//   opacity: 0;
+//   visibility: hidden;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 20;
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+// }
+// /* Стилізація для модалок - незабуваємо робити стилі ПО МАКЕТУ. Тут стилі від "виробника" */
+// .modal {
+//   opacity: 0;
+//   visibility: hidden;
+//   width: 100%;
+//   max-width: 500px;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 30;
+//   text-align: center;
+//   padding: 30px;
+//   border-radius: 10px;
+//   background-color: #fff;
+//   transition: 0.3s all;
+// }
+// /* Тут "вмикаються" модалки з класом актів, та оверлей (бекдроп) */
+// .modal.active,
+// .overlay.active {
+//   opacity: 1;
+//   visibility: visible;
+// }
+// /* Тут стилізується сама СВГ. Якщо робите через кнопку+свг - тоді стилізуємо КНОПКУ. А СВГ тільки 
+// даємо філл: каррентКолор, і то якщо треба ховер+фокус. */
+// .modal__cross {
+//   width: 15px;
+//   height: 15px;
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   fill: #444;
+//   cursor: pointer;
+// }
+// /* Тут я вставив свою кнопку (в яку засунув цю саму СВГ з прикладу), для прикладу, 
+// і задав їй стилі "від фонаря" :-) */
+// .button-for-close {
+//   width: 40px;
+//   height: 40px;
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   border-radius: 50%;
+//   background-color: aqua;
+//   & > .modal__cross {
+//     top: 5px;
+//     right: 5px;
+//   }
+// }
+
+// /* З прикладу від "виробника" тут стилізувався ТЕГ А. Перероблюю на класс, для цих посилань з прикладу,
+// щоб вони не ломали вам Ваші посилання, коли завантажите ці зміни в репозиторії собі. */
+// .a {
+//   padding: 20px;
+//   display: inline-block;
+//   text-decoration: none;
+//   background-color: #414b52;
+//   margin: 10px;
+//   color: #fff;
+//   border-radius: 3px;
+// }
