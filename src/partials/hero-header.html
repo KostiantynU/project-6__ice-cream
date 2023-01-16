@@ -108,10 +108,12 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container">
+<div class="hero-bg container">
+  <section class="hero ">
     <div class="hero-content">
-      <h1 class="hero-title">ice cream made with <span class="hero-title__passion"> passion </span></h1>
+      <h1 class="hero-title">
+        ice cream made with <span class="hero-title__passion"> passion </span>
+      </h1>
 
       <ul class="availability list">
         <li>
@@ -142,10 +144,63 @@
       </a>
     </div>
 
-    <div class="hero-bg">
-      <img src="./images/hero-header/hero-header__ice-cream__desktop-x1.png" alt="ice-cream" class="hero-bg__ice-cream">
+    <div>
+      <picture>
+        <source class="hero-bg__ice-cream"
+          srcset="
+            ./images/hero-header/hero-header__ice-cream__mobile-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__mobile-x2.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <source class="hero-bg__ice-cream"
+          srcset="
+            ./images/hero-header/hero-header__ice-cream__tablet-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__tablet-x2.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source class="hero-bg__ice-cream"
+          srcset="
+            ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
+          "
+          media="(min-width:1200px)" 
+        />
+        <img class="hero-bg__ice-cream"
+          srcset="
+            ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
+          "
+          src="./images/hero-header/hero-header__ice-cream__desktop-x1.png"
+          alt="bg-ice-cream"
+        />
+      </picture>
 
+      <picture>
+        <source class="hero-bg__many-ice-cream"
+          srcset="
+            ./images/hero-header/hero__many-ice-cream-tablet-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream-tablet-x2.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source class="hero-bg__many-ice-cream"
+          srcset="
+            ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img class="hero-bg__many-ice-cream"
+          srcset="
+            ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
+            ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
+          "
+          src="./images/hero-header/hero__many-ice-cream__desktop-x1.png"
+          alt="bg-ice-cream"
+        />
+      </picture>
     </div>
-
-  </div>
-</section>
+  </section>
+</div>
