@@ -32,8 +32,7 @@
 .abouts {
   width: 100%;
   height: auto;
-  // padding-top: 60px;
-  padding-top: 61px;
+  padding-top: 60px;
 
   &__label {
     @include tablet {
@@ -46,18 +45,6 @@
       font-size: 30px;
       line-height: 1.68;
     }
-
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //   font-weight: 800;
-    //   font-size: 30px;
-    //   line-height: 37px;
-    // }
-
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //   font-size: 22px;
-    //   line-height: 27px;
-    // }
-
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
@@ -67,9 +54,9 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-bottom: 12px;
 
     color: #fcfcfc;
-    // margin-top: 60px;
   }
 
   &__title {
@@ -77,16 +64,17 @@
       font-size: 34px;
       line-height: 1.26;
       width: 100%;
+      margin-bottom: 82px;
     }
     @include desktop {
       font-size: 36px;
       line-height: 1.25;
       width: 100%;
+      margin-bottom: 82px;
     }
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    // height: 45px;
     left: 360px;
     top: 109px;
 
@@ -99,9 +87,9 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 32px;
 
     color: #fcfcfc;
-    margin-top: 12px;
   }
 
   &__wrapper {
@@ -110,6 +98,7 @@
     }
     @include desktop {
       width: 490px;
+      margin-right: 73px;
     }
   }
 
@@ -154,7 +143,6 @@
       font-size: 16px;
     }
     width: 220px;
-    // height: 111px;
     left: 616px;
     top: 326px;
 
@@ -167,11 +155,9 @@
 
     font-size: 12px;
     line-height: 2.33;
-    // margin-bottom: 8px;
     letter-spacing: 0.04em;
 
     color: #fcfcfc;
-    // margin-right: 121px;
   }
 
   &__addition {
@@ -185,7 +171,6 @@
       line-height: 1.94;
     }
     width: 220px;
-    // height: 107px;
     left: 616px;
     top: 445px;
 
@@ -225,7 +210,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.92;
-    // margin-top: 8px;
     letter-spacing: 0.04em;
     text-decoration: none;
 
@@ -234,14 +218,17 @@
   &__list {
     @include tablet {
       margin-top: 0;
+      margin-bottom: 32px;
     }
     @include desktop {
       margin-top: 0;
+      margin-bottom: 54px;
     }
 
     display: block;
     list-style-type: none;
     margin-top: 62px;
+    margin-bottom: 24px;
   }
 
   &__flex {
@@ -250,35 +237,33 @@
     }
     @include tablet {
       display: flex;
-      margin-top: 82px;
+      margin-bottom: 99px;
+      // margin-top: 82px;
     }
     @include desktop {
       display: flex;
-      margin-top: 82px;
+      margin-bottom: 99px;
+      // margin-top: 82px;
     }
 
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
-
-    // text-align: center;
+    margin-bottom: 60px;
+    // margin-top: 32px;
   }
 
   &__button {
-    // @include tablet {
-    //   margin-top: 54px;
-    // }
     @include desktop {
-      margin-top: 54px;
+      // margin-top: 54px;
     }
     @include tablet {
-      margin-top: 32px;
+      // margin-top: 32px;
     }
     width: 164px;
     height: 42px;
     left: 616px;
     top: 637px;
-    cursor: pointer;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
 
     background: #f8d24e;
     border-radius: 10px;
@@ -289,7 +274,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
-    margin-top: 24px;
+    // margin-top: 24px;
 
     align-items: center;
     text-align: center;
@@ -316,13 +301,13 @@
   &__items {
     @include tablet {
       display: flex;
-      margin-top: 99px;
+      // margin-top: 99px;
     }
     @include desktop {
       display: flex;
-      margin-top: 99px;
+      // margin-top: 99px;
     }
-    margin-top: 60px;
+    // margin-top: 60px;
     display: block;
     list-style-type: none;
   }
@@ -331,12 +316,12 @@
     @include tablet {
       font-size: 48px;
       line-height: 1.22;
-      margin-top: 32px;
+      // margin-top: 32px;
     }
     @include desktop {
       font-size: 58px;
       line-height: 71px;
-      margin-top: 40px;
+      // margin-top: 40px;
     }
     font-family: 'Montserrat';
     font-style: normal;
@@ -347,7 +332,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-top: 16px;
+    // margin-top: 16px;
     margin-bottom: 12px;
 
     color: #fcfcfc;
@@ -384,7 +369,6 @@
     line-height: 1.76;
 
     text-align: center;
-    // letter-spacing: 0.02em;
 
     margin-left: auto;
     margin-right: auto;
@@ -421,13 +405,19 @@
     background-color: #f8d24e;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
+
+    @include desktop {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 
   &__features {
     margin-bottom: 32px;
-    // @include tablet {
-    //   margin-right: 30px;
-    // }
+
     @include desktop {
       margin-right: 30px;
       margin-bottom: 0;
@@ -436,7 +426,6 @@
       margin-right: 30px;
       margin-bottom: 0;
     }
-    // margin-right: 30px;
   }
 
   // &__features:last-child {

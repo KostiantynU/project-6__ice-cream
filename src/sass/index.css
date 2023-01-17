@@ -1,0 +1,281 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #131313;
+  background-color: #84a178;
+  font-family: "Montserrat", "Seymour One", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-top: 20px;
+    padding-right: 32px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+}
+
+.products {
+  padding: 60px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.products__list {
+  width: auto;
+  height: auto;
+  margin-top: 303px;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: flex;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__list {
+    display: flex;
+    gap: 29px;
+  }
+}
+.products__list li {
+  width: 280px;
+  height: 536px;
+  border-radius: 24px;
+}
+@media screen and (min-width: 480px) {
+  .products__list li {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__list li {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__list li {
+    width: 370px;
+  }
+}
+
+.products__icecream {
+  background-color: #AEC6A5;
+  position: relative;
+}
+.products__icecream::before, .products__icecream::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .products__icecream::before, .products__icecream::after {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__icecream::before {
+  top: -165px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
+}
+
+.products__icecoffee {
+  background-color: #EFD478;
+  position: relative;
+}
+.products__icecoffee::before, .products__icecoffee::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .products__icecoffee::before, .products__icecoffee::after {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__icecoffee::before {
+  top: -165px;
+  left: 33px;
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
+}
+
+.products__milkshakes {
+  background-color: #D6936D;
+  position: relative;
+}
+.products__milkshakes::before, .products__milkshakes::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .products__milkshakes::before, .products__milkshakes::after {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__milkshakes::before {
+  top: -165px;
+  left: 33px;
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25);
+}
+
+.products__label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.products__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  margin-top: 12px;
+}
+
+.products__text-items {
+  margin-top: 165px;
+}
+
+.products__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.products__text-box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 200px;
+  margin-top: 66px;
+}
+@media screen and (min-width: 768px) {
+  .products__text-box {
+    width: 172px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__text-box {
+    width: 246px;
+  }
+}
+
+.products_btn-icon {
+  width: 16px;
+  height: 40px;
+}
+
+.products__btn {
+  position: relative;
+  bottom: -280px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+.products__btn:hover, .products__btn:focus {
+  fill: rgb(137, 64, 64);
+}/*# sourceMappingURL=index.css.map */
