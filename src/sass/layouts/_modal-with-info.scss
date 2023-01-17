@@ -33,7 +33,7 @@
   }
 
   @include mobile {
-    width: 480px;
+    width: 280px;
     height: auto;
   }
 
@@ -126,7 +126,7 @@
     text-align: center;
     justify-content: space-between;
     margin-top: 22px;
-    @include mobile{
+    @include mobile {
       display: flex;
       gap: 10px;
     }
@@ -302,7 +302,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
     margin-bottom: 16px;
-    padding-left: 10px;
+    padding: 10px;
     @include tablet {
       width: 368px;
       display: flex;
