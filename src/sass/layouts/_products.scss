@@ -104,11 +104,19 @@
         transform: translate(-50%, -195%);
 
         @media screen and (min-width:768px) {
+<<<<<<< Updated upstream
+        transform: translate(-50%, -205%);
+        }
+
+        @media screen and (min-width:1200px) {
+        background-image: url(../images/products/ice-cream__desktop__x1.png);
+=======
             transform: translate(-50%, -205%);
         }
 
         @media screen and (min-width:1200px) {
             background-image: url(../images/products/ice-cream__desktop__x1.png);
+>>>>>>> Stashed changes
             transform: translate(-50%, -182%);
         }
     }
@@ -337,6 +345,10 @@
     }
 
     @media screen and (min-width:1200px) {
+<<<<<<< Updated upstream
+    transform: translateY(1400%);
+=======
         transform: translateY(1400%);
+>>>>>>> Stashed changes
     }
 }
