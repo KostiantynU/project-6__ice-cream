@@ -5,35 +5,22 @@
     <div class="nav-content">
       <a class="nav__logo" href="./index.html">
         <picture>
-          <source
-            srcset="
+          <source srcset="
               ./images/hero-header/logo-320.png    1x,
               ./images/hero-header/logo-320-x2.png 2x
-            "
-            media="(max-width:480px)"
-          />
-          <source
-            srcset="
+            " media="(max-width:480px)" />
+          <source srcset="
               ./images/hero-header/logo.png    1x,
               ./images/hero-header/logo-x2.png 2x
-            "
-            media="(max-width:1199px)"
-          />
-          <source
-            srcset="
+            " media="(max-width:1199px)" />
+          <source srcset="
               ./images/hero-header/logo-desktop.png    1x,
               ./images/hero-header/logo-desktop-x2.png 2x
-            "
-            media="(min-width:1200px)"
-          />
-          <img
-            srcset="
+            " media="(min-width:1200px)" />
+          <img srcset="
               ./images/hero-header/logo-desktop.png    1x,
               ./images/hero-header/logo-desktop-x2.png 2x
-            "
-            src="./images/hero-header/logo-desktop.png"
-            alt="logo"
-          />
+            " src="./images/hero-header/logo-desktop.png" alt="logo" />
         </picture>
       </a>
       <nav class="nav__content">
@@ -56,7 +43,7 @@
             <use href="./images/icons.svg#icon-menu-fill"></use>
           </svg>
         </button>
-        <button type="button" class="nav__btn">
+        <button type="button" class="nav__btn js-open-modal" data-modal="modal-buy-now">
           Buy now
           <svg width="12" height="12" class="nav__btn-arrow">
             <use href="./images/icons.svg#icon-arrow-right-bold"></use>
@@ -67,14 +54,10 @@
       <div class="mobile-menu is-hidden container" data-menu>
         <div class="mobile-menu__control">
           <a href="">
-            <img
-              srcset="
+            <img srcset="
                 ./images/hero-header/logo.png    1x,
                 ./images/hero-header/logo-x2.png 2x
-              "
-              src="./images/hero-header/logo.png"
-              alt="logo"
-            />
+              " src="./images/hero-header/logo.png" alt="logo" />
           </a>
           <button type="button" class="btn-close-menu" data-menu-close>
             <svg class="btn-close-menu__icon">
@@ -99,11 +82,7 @@
             </li>
           </ul>
 
-          <button
-            type="button"
-            class="mobile-nav__btn js-open-modal"
-            data-modal="modal-buy-now"
-          >
+          <button type="button" class="mobile-nav__btn js-open-modal" data-modal="modal-buy-now">
             Buy now
             <svg width="12" height="12" class="nav__btn-arrow">
               <use href="./images/icons.svg#icon-arrow-right-bold"></use>
@@ -115,14 +94,10 @@
         <div class="mobile-menu is-hidden container" data-menu>
           <div class="mobile-menu__control">
             <a href="">
-              <img
-                srcset="
+              <img srcset="
                   ./images/hero-header/logo.png    1x,
                   ./images/hero-header/logo-x2.png 2x
-                "
-                src="./images/hero-header/logo.png"
-                alt="logo"
-              />
+                " src="./images/hero-header/logo.png" alt="logo" />
             </a>
             <button type="button" class="btn-close-menu" data-menu-close>
               <svg class="btn-close-menu__icon">
@@ -147,7 +122,7 @@
               </li>
             </ul>
 
-            <button type="button" class="mobile-nav__btn">
+            <button type="button" class="mobile-nav__btn js-open-modal" data-modal="modal-buy-now">
               Buy now
               <svg width="12" height="12" class="nav__btn-arrow">
                 <use href="./images/icons.svg#icon-arrow-right-bold"></use>
@@ -201,67 +176,37 @@
 
     <div>
       <picture>
-        <source
-          class="hero-bg__ice-cream"
-          srcset="
+        <source class="hero-bg__ice-cream" srcset="
             ./images/hero-header/hero-header__ice-cream__mobile-x1.png 1x,
             ./images/hero-header/hero-header__ice-cream__mobile-x2.png 2x
-          "
-          media="(max-width:767px)"
-        />
-        <source
-          class="hero-bg__ice-cream"
-          srcset="
+          " media="(max-width:767px)" />
+        <source class="hero-bg__ice-cream" srcset="
             ./images/hero-header/hero-header__ice-cream__tablet-x1.png 1x,
             ./images/hero-header/hero-header__ice-cream__tablet-x2.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          class="hero-bg__ice-cream"
-          srcset="
+          " media="(min-width:768px)" />
+        <source class="hero-bg__ice-cream" srcset="
             ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
             ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <img
-          class="hero-bg__ice-cream"
-          srcset="
+          " media="(min-width:1200px)" />
+        <img class="hero-bg__ice-cream" srcset="
             ./images/hero-header/hero-header__ice-cream__desktop-x1.png 1x,
             ./images/hero-header/hero-header__ice-cream__desktop-x2.png 2x
-          "
-          src="./images/hero-header/hero-header__ice-cream__desktop-x1.png"
-          alt="bg-ice-cream"
-        />
+          " src="./images/hero-header/hero-header__ice-cream__desktop-x1.png" alt="bg-ice-cream" />
       </picture>
 
       <picture>
-        <source
-          class="hero-bg__many-ice-cream"
-          srcset="
+        <source class="hero-bg__many-ice-cream" srcset="
             ./images/hero-header/hero__many-ice-cream-tablet-x1.png 1x,
             ./images/hero-header/hero__many-ice-cream-tablet-x2.png 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          class="hero-bg__many-ice-cream"
-          srcset="
+          " media="(min-width:768px)" />
+        <source class="hero-bg__many-ice-cream" srcset="
             ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
             ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <img
-          class="hero-bg__many-ice-cream"
-          srcset="
+          " media="(min-width:1200px)" />
+        <img class="hero-bg__many-ice-cream" srcset="
             ./images/hero-header/hero__many-ice-cream__desktop-x1.png 1x,
             ./images/hero-header/hero__many-ice-cream__desktop-x2.png 2x
-          "
-          src="./images/hero-header/hero__many-ice-cream__desktop-x1.png"
-          alt="bg-ice-cream"
-        />
+          " src="./images/hero-header/hero__many-ice-cream__desktop-x1.png" alt="bg-ice-cream" />
       </picture>
     </div>
   </section>

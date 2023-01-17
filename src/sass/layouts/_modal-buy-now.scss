@@ -1,0 +1,285 @@
+// header modal - buy now
+
+.header-modal {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 280px;
+    height: auto;
+    padding: 28px 28px 29px;
+    color: $primary-text-color;
+    transform: translate(-50%, 30px) scale(1);
+    background-color: $secondary-text-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform $time-duration $time-function,
+        opacity $time-duration $time-function,
+        visibility $time-duration $time-function;
+
+    @include tablet {
+        width: 568px;
+        padding: 32px 54px;
+    }
+
+    @include desktop {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__btn-close {
+        position: absolute;
+        display: flex;
+        top: 12px;
+        right: 12px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 0;
+        fill: $primary-text-color;
+        transition: fill $time-duration $time-function;
+        cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+        padding: 0;
+        margin: 0;
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+
+        @include tablet {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__icon-close {
+        height: inherit;
+    }
+
+    &__title {
+        margin-bottom: 83px;
+        text-align: center;
+        color: $primary-text-color;
+        font-family: 'Seymour One', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+
+        @include tablet {
+            font-size: 20;
+            line-height: 1.4;
+            margin-bottom: 103px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 82px;
+        margin-bottom: 31px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__product {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        width: 132px;
+        height: 136px;
+        border: solid 2px;
+        border-radius: 10px;
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: uppercase;
+
+        @include tablet {
+            height: 135px;
+        }
+    }
+
+    &__checkbox {
+        appearance: none;
+        position: absolute;
+    }
+
+    &__checkbox:checked+.header-modal__product--icecream {
+        background-color: $ice-cream-color;
+    }
+
+    &__checkbox:checked+.header-modal__product--icecoffee {
+        background-color: $ice-coffee-color;
+    }
+
+    &__checkbox:checked+.header-modal__product--milkshake {
+        background-color: $milkshake-color;
+    }
+
+&__img {
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform $time-duration $time-function;
+}
+
+&__product:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+&__product--icecream {
+    border-color: #96AF8C;
+}
+
+&__product--icecream:before {
+    background: linear-gradient(0deg,
+            rgba(156, 190, 143, 0.7),
+            rgba(156, 190, 143, 0.7)),
+        $btn-slider-color;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+&__product--icecoffee {
+    border-color: $ice-coffee-color;
+}
+
+&__product--icecoffee:before {
+    background: linear-gradient(0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7)),
+        $btn-slider-color;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+&__product--milkshake {
+    border-color: $address-color;
+}
+
+&__product--milkshake:before {
+    background: linear-gradient(0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7)),
+        $btn-slider-color;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+&__form {
+    color: $primary-text-color;
+}
+
+&__input {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 224px;
+    height: 32px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+
+    outline: none;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: solid 1px $primary-bg-color;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    color: $primary-text-color;
+
+    @include tablet {
+        width: 368px;
+        height: 42px;
+        padding: 11px 16px;
+        margin-bottom: 16px;
+    }
+}
+
+&__input::placeholder {
+    color: $primary-text-color;
+}
+
+&__input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+&__comment {
+    resize: none;
+    height: 65px;
+    margin-bottom: 26px;
+
+    @include tablet {
+        height: 84px;
+        margin-bottom: 32px;
+    }
+}
+
+&__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 114px;
+    height: 42px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    border: 0;
+    border-radius: 10px;
+    background-color: $accent-color;
+    color: $primary-text-color;
+    fill: $primary-text-color;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+    transition: background-color $time-duration $time-function,
+        color $time-duration $time-function,
+        fill $time-duration $time-function;
+
+    @include tablet {
+        width: 121px;
+        font-size: 14px;
+        line-height: 1.22;
+    }
+
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+
+    &:focus {
+        background-color: $btn-hover-color;
+        fill: $secondary-text-color;
+        color: $secondary-text-color;
+    }
+
+    &:disabled {
+        background-color: $btn-disabled-color;
+    }
+  }
+}
