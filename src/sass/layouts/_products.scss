@@ -1,10 +1,12 @@
+/* Секція Продукти */
+
 .products {
+    width: 100%;
     padding: 60px 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../images/Backgroud__mobile-x1.png);
@@ -98,15 +100,15 @@
 
     &::after {
         background-image: url(../images/products/ice-cream__tablet-mobili__x1.png);
-        transform: translate(-50%, -212%);
+        transform: translate(-50%, -195%);
 
         @media screen and (min-width:768px) {
-        transform: translate(-50%, -223%);
+        transform: translate(-50%, -205%);
         }
 
         @media screen and (min-width:1200px) {
         background-image: url(../images/products/ice-cream__desktop__x1.png);
-            transform: translate(-50%, -195%);
+            transform: translate(-50%, -182%);
         }
     }
 
@@ -148,14 +150,14 @@
 
     &::after {
         background-image: url(../images/products/ice-coffee__tablet-mobili__x1.png);
-        transform: translate(-50%, -240%);
+        transform: translate(-50%, -220%);
 
         @media screen and (min-width:768px) {
-            transform: translate(-50%, -252%);
+            transform: translate(-50%, -230%);
         }
 
         @media screen and (min-width:1200px) {
-            transform: translate(-50%, -207%);
+            transform: translate(-50%, -192%);
             background-image: url(../images/products/ice-cofee__desktop__x1.png);
         }
     }
@@ -198,14 +200,14 @@
 
     &::after {
         background-image: url(../images/products/ice-milkshakes__tablet-mobili__x1.png);
-        transform: translate(-50%, -240%);
+        transform: translate(-50%, -220%);
 
         @media screen and (min-width:768px) {
-            transform: translate(-50%, -237%);
+            transform: translate(-50%, -217%);
         }
 
         @media screen and (min-width:1200px) {
-            transform: translate(-50%, -208%);
+            transform: translate(-50%, -193%);
             background-image: url(../images/products/milkshakes__desktop__x1.png);
         }
     }
@@ -236,9 +238,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 1;
+    line-height: 1.26;
     margin-top: 12px;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     @media screen and (min-width:768px) {
@@ -286,9 +287,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.76;
     text-align: center;
-    letter-spacing: 0.04em;
 
     @media screen and (min-width:1200px) {
     font-size: 16px;
@@ -300,15 +300,16 @@
     margin-right: auto;
     text-align: center;
     width: 200px;
-    margin-top: 40px;
+    margin-top: 20px;
 
     @media screen and (min-width:768px) {
         width: 172px;
+        margin-top: 20px;
     }
 
     @media screen and (min-width:1200px) {
         width: 244px;
-        margin-top: 66px;
+        margin-top: 40px;
     }
 }
 
@@ -318,12 +319,11 @@
 }
 
 .products__btn {
-    position: relative;
     transform: translateY(1270%);
 
     border: none;
     background-color: inherit;
-    cursor: pointer;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
     padding: 0;
 
     &:hover,
@@ -336,6 +336,6 @@
     }
     
     @media screen and (min-width:1200px) {
-    transform: translateY(1500%);
+    transform: translateY(1400%);
     }
 }
