@@ -11,11 +11,13 @@
 
   @media screen and (min-width: 480px) {
     padding-bottom: 409px;
+    padding-top: 256px;
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/Backgroud__tablet-x1.png);
     padding-bottom: 379px;
+    padding-top: 283px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/Backgroud__tablet-x2.png);
@@ -25,6 +27,7 @@
   @media screen and (min-width: 1200px) {
     background-image: url(../images/Backgroud__desktop-x1.png);
     padding-bottom: 228px;
+    padding-top: 464px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/Backgroud__desktop-x2.png);
