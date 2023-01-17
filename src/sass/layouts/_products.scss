@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 146px;
-    
+
 
     @media screen and (min-width:768px) {
         gap: 16px;
@@ -93,6 +93,7 @@
         @media screen and (min-width:768px) {
             transform: translate(-50%, -53%);
         }
+
         @media screen and (min-width:1200px) {
             transform: translate(-50%, -55%);
         }
@@ -103,11 +104,19 @@
         transform: translate(-50%, -195%);
 
         @media screen and (min-width:768px) {
+<<<<<<< Updated upstream
         transform: translate(-50%, -205%);
         }
 
         @media screen and (min-width:1200px) {
         background-image: url(../images/products/ice-cream__desktop__x1.png);
+=======
+            transform: translate(-50%, -205%);
+        }
+
+        @media screen and (min-width:1200px) {
+            background-image: url(../images/products/ice-cream__desktop__x1.png);
+>>>>>>> Stashed changes
             transform: translate(-50%, -182%);
         }
     }
@@ -138,7 +147,7 @@
         border-radius: 50%;
         background-color: inherit;
         box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 25%);
-        
+
         @media screen and (min-width:768px) {
             transform: translate(-50%, -54%);
         }
@@ -190,11 +199,11 @@
         box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 25%);
 
         @media screen and (min-width:768px) {
-        transform: translate(-50%, -53%);
+            transform: translate(-50%, -53%);
         }
 
         @media screen and (min-width:1200px) {
-        transform: translate(-50%, -57%);
+            transform: translate(-50%, -57%);
         }
     }
 
@@ -224,12 +233,12 @@
     text-transform: uppercase;
 
     @media screen and (min-width:768px) {
-    font-size: 22px;
+        font-size: 22px;
     }
-        
+
     @media screen and (min-width:1200px) {
-    font-size: 30px;
-    letter-spacing: 0.04em;
+        font-size: 30px;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -243,12 +252,12 @@
     text-transform: uppercase;
 
     @media screen and (min-width:768px) {
-    font-size: 34px;
+        font-size: 34px;
     }
-        
+
     @media screen and (min-width:1200px) {
-    font-size: 36px;
-    letter-spacing: 0.06em;
+        font-size: 36px;
+        letter-spacing: 0.06em;
     }
 }
 
@@ -262,11 +271,11 @@
     text-transform: uppercase;
 
     @media screen and (min-width:768px) {
-    font-size: 22px;
+        font-size: 22px;
     }
-        
+
     @media screen and (min-width:1200px) {
-    font-size: 30px;
+        font-size: 30px;
     }
 }
 
@@ -274,11 +283,11 @@
     margin-top: 126px;
 
     @media screen and (min-width:768px) {
-    margin-top: 108px;
+        margin-top: 108px;
     }
-        
+
     @media screen and (min-width:1200px) {
-    margin-top: 165px;
+        margin-top: 165px;
     }
 }
 
@@ -291,7 +300,7 @@
     text-align: center;
 
     @media screen and (min-width:1200px) {
-    font-size: 16px;
+        font-size: 16px;
     }
 }
 
@@ -332,10 +341,14 @@
     }
 
     @media screen and (min-width:768px) {
-    transform: translateY(1400%);
+        transform: translateY(1400%);
     }
-    
+
     @media screen and (min-width:1200px) {
+<<<<<<< Updated upstream
     transform: translateY(1400%);
+=======
+        transform: translateY(1400%);
+>>>>>>> Stashed changes
     }
 }
