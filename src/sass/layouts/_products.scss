@@ -1,10 +1,12 @@
+/* Секція Продукти */
+
 .products {
+    width: 100%;
     padding: 60px 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../images/Backgroud__mobile-x1.png);
@@ -323,7 +325,7 @@
 
     border: none;
     background-color: inherit;
-    cursor: pointer;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
     padding: 0;
 
     &:hover,
