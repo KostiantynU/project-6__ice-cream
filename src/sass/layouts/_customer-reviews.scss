@@ -1,159 +1,137 @@
 .customersreview {
-    background-image: url(../images/Backgroud__mobile-x1.png);
-    background-size: cover;
-    background-attachment: fixed;
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/Backgroud__mobile-x2.png);
+  background-image: url(../images/Backgroud__mobile-x1.png);
+  background-size: cover;
+  // background-attachment: fixed;
+  padding-bottom: 393px;
+  padding-top: 178px;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Backgroud__mobile-x2.png);
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 409px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/Backgroud__tablet-x1.png);
+    padding-bottom: 379px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/Backgroud__tablet-x2.png);
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/Backgroud__tablet-x1.png);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/Backgroud__tablet-x2.png);
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/Backgroud__desktop-x1.png);
+    padding-bottom: 228px;
 
-        }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/Backgroud__desktop-x2.png);
     }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/Backgroud__desktop-x1.png);
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/Backgroud__desktop-x2.png);
-
-        }
-    }
+  }
 }
-
 
 .comentary-slider {
-    padding-bottom: 393px;
-    padding-top: 178px;
-    align-items: center;
-    text-align: center;
-        @media screen and (min-width: 480px) {
-                padding-bottom: 409px;
-            }
-        
-            @media screen and (min-width: 768px) {
-                padding-bottom: 379px;
-            }
-        
-            @media screen and (min-width: 1200px) {
-                padding-bottom: 228px;
-            }
+  align-items: center;
+  text-align: center;
 }
-
 
 .slick-prev:before,
 .slick-next:before {
-    display: none;
+  display: none;
 }
 
 .comentary-slider__item {
-    justify-content: center;
-    text-align: center;
-
-
-
+  justify-content: center;
+  text-align: center;
 }
 
-
 .customers-photo {
-    border-radius: 50%;
-    margin-bottom: 32px;
-    justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  justify-content: center;
 }
 
 .slick-slide img {
-    display: inline;
-
+  display: inline;
 }
 
-
 .my-dots {
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .my-dots li {
-    position: relative;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 9px;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 9px;
+  cursor: pointer;
 }
 
 .my-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    border: 0;
-    outline: none;
-    background: #D9D9D9;
-    border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: #d9d9d9;
+  border-radius: 50%;
 }
-
-
 
 .my-dots li.slick-active button {
-    background-color: #84A178;
-    border-radius: 50%
+  background-color: #84a178;
+  border-radius: 50%;
 }
-
 
 .customers-comentary {
-    color: #FCFCFC;
-    text-align: center;
-    background-color: #84A178;
-    border-radius: 10px;
-    padding: 35px 39px;
-    line-height: 2.58;
-    margin-bottom: 32px;
-    min-height: 256px;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+  color: #fcfcfc;
+  text-align: center;
+  background-color: #84a178;
+  border-radius: 10px;
+  padding: 35px 39px;
+  line-height: 2.58;
+  margin-bottom: 32px;
+  min-height: 256px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
 
-    @media screen and (min-width: 768px) {
-        padding: 28px 80px;
-        max-width: 705px;
-        min-height: 138px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.85;
-    }
+  @media screen and (min-width: 768px) {
+    padding: 28px 80px;
+    max-width: 705px;
+    min-height: 138px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+  }
 
-    @media screen and (min-width: 1200px) {
-        padding: 43px 109px;
-        max-width: 968px;
-        font-size: 16px;
-        line-height: 1.87;
-    }
-
+  @media screen and (min-width: 1200px) {
+    padding: 43px 109px;
+    max-width: 968px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
 
-
 .customers-meta {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.85;
-    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  margin-bottom: 12px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: 1.87;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 32px;
+  }
 }

@@ -18,6 +18,10 @@
   }
 }
 
+.nav__logo{
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+}
+
 .nav__content {
   display: flex;
   align-items: center;
@@ -45,6 +49,9 @@
   font-size: 16px;
   line-height: 1.25;
   color: $secondary-text-color;
+  transition: color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms;
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+
 
   &:hover,
   &:focus {
@@ -68,6 +75,10 @@
   text-align: center;
 
   color: $primary-text-color;
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+
+  transition: background-color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms,
+    color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms , fill cubic-bezier(0.6, 0.3, 1, 0.49) 250ms;
 
   &:hover {
     background-color: $btn-hover-color;
@@ -128,7 +139,7 @@
 .mobile-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transform: translateY(-100%);
+  transform: translateX(100%);
 }
 
 .mobile-menu__control {
@@ -182,6 +193,8 @@
   line-height: 1.21;
   color: $secondary-text-color;
 
+  transition: color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms;
+
   &:hover {
     color: $accent-color;
   }
@@ -197,6 +210,8 @@
   font-size: 32px;
   line-height: 1.21;
   color: $primary-text-color;
+  transition: color cubic-bezier(0.6, 0.3, 1, 0.49) 300ms;
+
 
   &:hover {
     color: $accent-color;
@@ -234,6 +249,8 @@
 
 // Section HERO
 .hero {
+  position: relative;
+  overflow: hidden;
   padding-top: 50px;
   padding-bottom: 236px;
 
@@ -252,69 +269,188 @@
   }
 }
 
-.hero {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #84a178;
-  background-image: url(/src/images/hero-header/hero__bg-img-320-x1.png),
-    url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png);
+.hero-bg__many-ice-cream {
+  position: absolute;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
-      url(/src/images/hero-header/hero__bg-img-320-x2.png);
+  opacity: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    bottom: 12px;
+    left: 32px;
+    opacity: 1;
   }
 
-  background-size: 177px, 100% 50px;
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    bottom: 65px;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.hero-bg__many-ice-cream {
+  animation: animate360 10000ms infinite 1000ms;
+  animation-timing-function: linear;
+}
+
+@keyframes animate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-bg__ice-cream {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+
+  right: 40px;
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+
+    width: 218px;
+    bottom: 0;
+    left: 222px;
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 268px;
+    bottom: 0;
+    left: 376px;
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 456px;
+    bottom: -96%;
+    left: 646px;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .hero-bg__ice-cream {
+    animation: animateY100 3000ms 1 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes animateY100 {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  
+    30% {
+      transform: translateY(-50%);
+      opacity: 0.5;
+    }
+  
+    50% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  
+  
+  
+    100% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+  }
+}
+
+
+
+.hero-bg__many-ice-cream {
+  position: absolute;
+
+  opacity: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    bottom: 12px;
+    left: 32px;
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    bottom: 65px;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.hero-bg__many-ice-cream {
+  animation: animate360 10000ms infinite 1000ms;
+  animation-timing-function: linear;
+}
+
+@keyframes animate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hero-bg {
+  background-image: url(/src/images/hero-header/hero__bg-img-320-x1.png);
+  background-size: 100% 50px;
 
   background-repeat: no-repeat;
 
-  background-position: bottom center, 100% 100%;
+  background-position: 100% 100%;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/hero-header/hero__bg-img-320-x2.png);
+  }
+
+ 
 
   @media screen and (min-width: 480px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x1.png),
-      url(/src/images/hero-header/hero__bg-img-480-x1.png);
-    background-size: 218px, 330px;
-    background-position: 90% 100%, 100% 100%;
+    background-image: url(/src/images/hero-header/hero__bg-img-480-x1.png);
+    background-position: 100% 100%;
+    background-size: 294px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__mobile-x2.png),
-        url(/src/images/hero-header/hero__bg-img-480-x2.png);
+      background-image: url(/src/images/hero-header/hero__bg-img-480-x2.png);
     }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x1.png),
-      url(/src/images/hero-header/hero__many-ice-cream-tablet-x1.png),
-      url(/src/images/hero-header/hero__bg-img-tablet-x1.png);
-    background-size: 268px, 152px, 100%;
-    background-position: right 92px bottom 0, 32px 185px, 100% 100%;
-
+    background-image: url(/src/images/hero-header/hero__bg-img-tablet-x1.png);
+    background-size: 100%;
+    background-position: 100% 100%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__tablet-x2.png),
-        url(/src/images/hero-header/hero__many-ice-cream-tablet-x2.png),
-        url(/src/images/hero-header/hero__bg-img-tablet-x2.png);
+      background-image: url(/src/images/hero-header/hero__bg-img-tablet-x2.png);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x1.png),
-      url(/src/images/hero-header/hero__many-ice-cream__desktop-x1.png),
-      url(/src/images/hero-header/hero__bg-img-desktop-x1.png);
-    background-size: 456px 560px, 225px, 100% 383px;
-    background-position: right 92px bottom 0, left 16px bottom 65px, 100% 100%;
+    background-image: url(/src/images/hero-header/hero__bg-img-desktop-x1.png);
+    background-size: 100% 383px;
+    background-position: 100% 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/images/hero-header/hero-header__ice-cream__desktop-x2.png),
-        url(/src/images/hero-header/hero__many-ice-cream__desktop-x2.png),
-        url(/src/images/hero-header/hero__bg-img-desktop-x2.png);
+      background-image: url(/src/images/hero-header/hero__bg-img-desktop-x2.png);
     }
   }
 }
@@ -323,7 +459,7 @@
   fill: $secondary-text-color;
 }
 
-.hero__title {
+.hero-title {
   display: block;
   width: 247px;
   height: auto;
@@ -351,15 +487,29 @@
 
     margin-bottom: 28px;
   }
+
+  &__passion {
+    font-size: 34px;
+    line-height: 0.97;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      line-height: 1.26;
+    }
+  }
 }
 
 .availability {
   display: none;
 
-  width: 85px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 52px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: block;
+    width: 85px;
   }
 }
 
@@ -382,24 +532,54 @@
 
 .availability__option {
   color: $secondary-text-color;
-  font-size: 14px;
-  line-height: 1.21;
+  font-size: 8px;
+  line-height: 1.25;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 
 .availability__number {
   font-weight: 900;
-  font-size: 46px;
+  font-size: 28px;
   line-height: 1.21;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
   color: $primary-text-color;
   margin-right: auto;
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.21;
+  }
+}
+
+.hero-links{
+  display: flex;
+  align-items: center;
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 109px;
+  }
+
+
 }
 
 .hero__btn {
-  display: inline-block;
-  width: 134px;
-  height: 42px;
+  display: flex;
+    width: 108px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+
+  
   margin-right: 12px;
 
   background-color: $primary-bg-color;
@@ -409,18 +589,21 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
+
+  transition: border-color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms,
+    color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms;
 
   &:hover {
     outline: 0;
     border-color: $btn-hover-color;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 39px;
-  }
+  
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 109px;
+    width: 134px;
+    height: 42px;
 
     &:focus {
       color: $secondary-text-color;
@@ -437,10 +620,13 @@
   font-size: 12px;
   line-height: 1.25;
   text-decoration: underline;
+  transition: color cubic-bezier(0.6, 0.3, 1, 0.49) 250ms;
+  cursor: url(https://svgshare.com/i/pX4.svg), pointer;
 
   &:hover {
     color: $btn-hover-color;
   }
+
 
   &:focus {
     outline: none;
@@ -459,7 +645,7 @@
   @media screen and (min-width: 768px) {
     display: block;
     width: 148px;
-    margin-left: 184px;
+    margin-left: 210px;
     font-size: 12px;
     line-height: 1.4;
     color: $secondary-text-color;
@@ -477,3 +663,4 @@
 .hero-details__text {
   margin-bottom: 24px;
 }
+
