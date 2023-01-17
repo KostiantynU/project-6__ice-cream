@@ -1,34 +1,45 @@
 /* Секція Контакти */
 
 .contacts {
-  transform: translateY(-25%);
+  position: relative;
 
-  @include tablet {
-    transform: translateY(-48%);
-  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 935px;
 
-  @include desktop {
-    transform: translateY(-34%);
+    @include mobile {
+      padding-bottom: 943px;
+    }
+
+    @include tablet {
+      padding-bottom: 278px;
+    }
+
+    @include desktop {
+      padding-bottom: 474px;
+    }
   }
 
   &__list {
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 20px;
+    transform: translateY(-353px);
 
     @include mobile {
-      margin-bottom: 24px;
+      transform: translateY(-349px);
     }
 
     @include tablet {
       flex-direction: row;
-      margin-bottom: 40px;
+      transform: translateY(-299px);
     }
 
     @include desktop {
       gap: 32px;
-      margin-bottom: 60px;
+      transform: translateY(-128px);
     }
   }
 
@@ -189,13 +200,13 @@
     margin-bottom: 60px;
     
     @include tablet {
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 40px;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 40px;
     }
     
     @include desktop {
-        margin-bottom: 120px;
+      margin-bottom: 120px;
     }
   }
 

@@ -54,6 +54,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-bottom: 12px;
 
     color: #fcfcfc;
   }
@@ -63,11 +64,13 @@
       font-size: 34px;
       line-height: 1.26;
       width: 100%;
+      margin-bottom: 82px;
     }
     @include desktop {
       font-size: 36px;
       line-height: 1.25;
       width: 100%;
+      margin-bottom: 82px;
     }
     margin-left: auto;
     margin-right: auto;
@@ -84,9 +87,9 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 32px;
 
     color: #fcfcfc;
-    margin-top: 12px;
   }
 
   &__wrapper {
@@ -215,14 +218,17 @@
   &__list {
     @include tablet {
       margin-top: 0;
+      margin-bottom: 32px;
     }
     @include desktop {
       margin-top: 0;
+      margin-bottom: 54px;
     }
 
     display: block;
     list-style-type: none;
     margin-top: 62px;
+    margin-bottom: 24px;
   }
 
   &__flex {
@@ -231,30 +237,33 @@
     }
     @include tablet {
       display: flex;
-      margin-top: 82px;
+      margin-bottom: 99px;
+      // margin-top: 82px;
     }
     @include desktop {
       display: flex;
-      margin-top: 82px;
+      margin-bottom: 99px;
+      // margin-top: 82px;
     }
 
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
+    margin-bottom: 60px;
+    // margin-top: 32px;
   }
 
   &__button {
     @include desktop {
-      margin-top: 54px;
+      // margin-top: 54px;
     }
     @include tablet {
-      margin-top: 32px;
+      // margin-top: 32px;
     }
     width: 164px;
     height: 42px;
     left: 616px;
     top: 637px;
-    cursor: pointer;
+    cursor: url(https://svgshare.com/i/pX4.svg), pointer;
 
     background: #f8d24e;
     border-radius: 10px;
@@ -265,7 +274,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
-    margin-top: 24px;
+    // margin-top: 24px;
 
     align-items: center;
     text-align: center;
@@ -292,13 +301,13 @@
   &__items {
     @include tablet {
       display: flex;
-      margin-top: 99px;
+      // margin-top: 99px;
     }
     @include desktop {
       display: flex;
-      margin-top: 99px;
+      // margin-top: 99px;
     }
-    margin-top: 60px;
+    // margin-top: 60px;
     display: block;
     list-style-type: none;
   }
@@ -307,12 +316,12 @@
     @include tablet {
       font-size: 48px;
       line-height: 1.22;
-      margin-top: 32px;
+      // margin-top: 32px;
     }
     @include desktop {
       font-size: 58px;
       line-height: 71px;
-      margin-top: 40px;
+      // margin-top: 40px;
     }
     font-family: 'Montserrat';
     font-style: normal;
@@ -323,7 +332,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-top: 16px;
+    // margin-top: 16px;
     margin-bottom: 12px;
 
     color: #fcfcfc;
@@ -396,6 +405,14 @@
     background-color: #f8d24e;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
+
+    @include desktop {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 
   &__features {

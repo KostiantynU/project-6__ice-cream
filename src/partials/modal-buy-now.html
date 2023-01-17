@@ -1,0 +1,56 @@
+<!-- Modal Buy Now -->
+<div class="header-modal modal js-modal" data-modal="modal-buy-now">
+    <button type="button" class="header-modal__btn-close js-modal-close">
+        <svg class="header-modal__icon-close">
+            <use href="./images/icons.svg#icon-close-line"></use>
+        </svg>
+    </button>
+    <p class="header-modal__title">Buy now</p>
+    <ul class="header-modal__list">
+        <li class="header-modal__item">
+            <label>
+                <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream" />
+                <p class="header-modal__product header-modal__product--icecream">
+                    ice cream
+                    <img class="header-modal__img"
+                        srcset="./images/modal-buy-now/modal-icecream_1x-min.png 1x, ./images/modal-buy-now/modal-icecream_2x-min.png 2x"
+                        src="./images/modal-buy-now/modal-icecream_1x-min.png" alt="ice-cream">
+                </p>
+            </label>
+        </li>
+        <li class="header-modal__item">
+            <label>
+                <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe" />
+                <p class="header-modal__product header-modal__product--icecoffee">
+                    ice coffe
+                    <img class="header-modal__img"
+                        srcset="./images/modal-buy-now/modal-icecoffee_1x-min.png 1x, ./images/modal-buy-now/modal-icecoffee_2x-min.png 2x"
+                        src="./images/modal-buy-now/modal-icecoffee_1x-min.png" alt="ice-coffee">
+                </p>
+            </label>
+        </li>
+        <li class="header-modal__item">
+            <label>
+                <input class="header-modal__checkbox" type="checkbox" name="product" value="milkshake" />
+                <p class="header-modal__product header-modal__product--milkshake">milkshake
+                    <img class="header-modal__img"
+                        srcset="./images/modal-buy-now/modal-milkshake_1x-min.png 1x, ./images/modal-buy-now/modal-milkshake_2x-min.png 2x"
+                        src="./images/modal-buy-now/modal-milkshake_1x-min.png" alt=" milkshake">
+                </p>
+            </label>
+        </li>
+    </ul>
+    <form class="header-modal__form">
+        <input class="header-modal__input" type="text" placeholder="Name" minlength="2" maxlength="30"
+            pattern="^[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ]+$" title="Only letters without numbers" id="txt"
+            onkeyup="manage(this)" autofocus required />
+        <input class="header-modal__input" type="tel" placeholder="Phone"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13"
+            title="+380 (12) 345-67-89" required />
+        <textarea class="header-modal__input header-modal__comment" name="comment" placeholder="Comment" cols="30"
+            rows="10"></textarea>
+        <button class="header-modal__btn" id="btSubmit" disabled type="submit">
+            Submit
+        </button>
+    </form>
+</div>
