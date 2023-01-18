@@ -97,6 +97,34 @@
     margin: 0 auto;
   }
 
+  &__gradientcoffee {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    position: relative;
+    background-image: linear-gradient(
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    );
+    // top: 91px;
+    margin: 0 auto;
+  }
+
+  &__gradientmilk {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    position: relative;
+    background-image: linear-gradient(
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    );
+    // top: 91px;
+    margin: 0 auto;
+  }
+
   &__product {
     @include tablet {
       display: flex;
@@ -163,6 +191,50 @@
         top: -1px;
       }
     }
+  }
+
+  &__coffee{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+    color: $primary-text-color;
+    width: 43px;
+    height: 43px;
+    background: $ice-coffee-color;
+    border: 2px solid $ice-coffee-color;
+    border-radius: 50%;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 53px;
+      height: 72px;
+      border-radius: 40px;
+      border: 2px solid $ice-coffee-color;
+      top: -1px;
+    }
+    @include tablet {
+      margin-left: 20px;
+      width: 53px;
+      height: 53px;
+      font-size: 12px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 65px;
+        height: 90px;
+        border-radius: 40px;
+        border: 2px solid $ice-coffee-color;
+        top: -1px;
+      }
+    }
+
   }
 
   &__additional {
@@ -247,7 +319,7 @@
     border: 1px solid #84a178;
     border-radius: 10px;
     margin-bottom: 16px;
-    padding-left: 10px;
+    padding: 10px;
     @include tablet {
       width: 368px;
       display: flex;
