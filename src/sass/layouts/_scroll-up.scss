@@ -4,7 +4,7 @@
 .scroll-up {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 10px;
   height: 46px;
   width: 46px;
   cursor: pointer;
@@ -16,6 +16,10 @@
   visibility: hidden;
   transform: translateY(15px);
   transition: $time-duration $time-function;
+
+  @include tablet {
+    bottom: 50px;
+  }
 }
 .scroll-up--active {
   opacity: 1;
