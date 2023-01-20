@@ -1,13 +1,13 @@
 .modal-map {
-  position: absolute;
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 87.5%;
+  min-width: 280px;
   height: auto;
   padding: 28px;
   color: $primary-text-color;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.5);
   background-color: $secondary-text-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
@@ -19,7 +19,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include mobile {
-    width: 480px;
+    width: 420px;
   }
   @include tablet {
     width: 568px;
@@ -28,7 +28,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1);
   }
   &__icon {
     position: absolute;
