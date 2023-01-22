@@ -1,15 +1,3 @@
-// .overlay {
-//   opacity: 0;
-//   visibility: hidden;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 20;
-//   transition: opacity $time-function, $time-function 0ms,
-//     visibility $time-function, $time-function;
-// }
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -83,7 +71,6 @@
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     position: relative;
     background-image: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-    // top: 91px;
     margin: 0 auto;
   }
 
@@ -291,10 +278,6 @@
   }
 }
 
-// .modal__product:not(:last-child) {
-//   padding-left: 12px;
-// }
-
 .modal-with-info.active,
 .overlay.active {
   opacity: 1;
@@ -308,31 +291,6 @@
   border: none;
   background-color: $secondary-text-color;
 }
-
-// .modal__cross {
-//   width: 15px;
-//   height: 15px;
-//   position: absolute;
-//   top: 20px;
-//   right: 20px;
-//   fill: #444;
-//   cursor: pointer;
-// }
-
-// .button-for-close {
-//   width: 40px;
-//   height: 40px;
-//   position: absolute;
-//   top: 20px;
-//   right: 20px;
-//   border-radius: 50%;
-//   background-color: aqua;
-//   & > .modal__cross {
-//     top: 5px;
-//     right: 5px;
-//   }
-// }
-
 .tes {
   position: absolute;
   top: 52px;
