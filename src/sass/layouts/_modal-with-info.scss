@@ -77,6 +77,12 @@
     background-image: linear-gradient(rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
     margin: 0 auto;
   }
+  &__gradient.ice-coffee {
+    background-image: linear-gradient(rgba(239, 212, 120, 0.7), rgba(239, 212, 120, 0.7));
+  }
+  &__gradient.milkshakes {
+    background-image: linear-gradient(rgba(214, 147, 109, 0.7), rgba(214, 147, 109, 0.7));
+  }
 
   &__product {
     @include tablet {
@@ -128,6 +134,20 @@
       border-radius: 40px;
       border: 2px solid #9cbe8f;
       top: -1px;
+    }
+    &.ice-coffee {
+      background: #efd478;
+      border: 2px solid #efd478;
+    }
+    &.ice-coffee::after {
+      border: 2px solid #efd478;
+    }
+    &.milkshakes {
+      background: #d6936d;
+      border: 2px solid #d6936d;
+    }
+    &.milkshakes::after {
+      border: 2px solid #d6936d;
     }
     @include tablet {
       margin-left: 20px;

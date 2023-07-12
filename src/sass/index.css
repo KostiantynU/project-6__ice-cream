@@ -8,7 +8,7 @@ img {
 body {
   color: #131313;
   background-color: #84a178;
-  font-family: "Montserrat", "Seymour One", sans-serif;
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
 }
@@ -43,7 +43,7 @@ ul {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -138,17 +138,19 @@ ul {
 }
 
 .products__icecream {
-  background-color: #AEC6A5;
+  background-color: #aec6a5;
   position: relative;
 }
-.products__icecream::before, .products__icecream::after {
-  content: "";
+.products__icecream::before,
+.products__icecream::after {
+  content: '';
   position: absolute;
   width: 200px;
   height: 200px;
 }
 @media screen and (min-width: 1200px) {
-  .products__icecream::before, .products__icecream::after {
+  .products__icecream::before,
+  .products__icecream::after {
     width: 302px;
     height: 302px;
   }
@@ -163,18 +165,20 @@ ul {
 }
 
 .products__icecoffee {
-  background-color: #EFD478;
+  background-color: #efd478;
   position: relative;
 }
-.products__icecoffee::before, .products__icecoffee::after {
-  content: "";
+.products__icecoffee::before,
+.products__icecoffee::after {
+  content: '';
   position: absolute;
   width: 200px;
   height: 200px;
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  .products__icecoffee::before, .products__icecoffee::after {
+  .products__icecoffee::before,
+  .products__icecoffee::after {
     width: 302px;
     height: 302px;
   }
@@ -188,18 +192,20 @@ ul {
 }
 
 .products__milkshakes {
-  background-color: #D6936D;
+  background-color: #d6936d;
   position: relative;
 }
-.products__milkshakes::before, .products__milkshakes::after {
-  content: "";
+.products__milkshakes::before,
+.products__milkshakes::after {
+  content: '';
   position: absolute;
   width: 200px;
   height: 200px;
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  .products__milkshakes::before, .products__milkshakes::after {
+  .products__milkshakes::before,
+  .products__milkshakes::after {
     width: 302px;
     height: 302px;
   }
@@ -213,7 +219,7 @@ ul {
 }
 
 .products__label {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -222,7 +228,7 @@ ul {
 }
 
 .products__title {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -236,7 +242,7 @@ ul {
 }
 
 .products__text {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -276,6 +282,7 @@ ul {
   cursor: pointer;
   padding: 0;
 }
-.products__btn:hover, .products__btn:focus {
+.products__btn:hover,
+.products__btn:focus {
   fill: rgb(137, 64, 64);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

@@ -3,34 +3,57 @@
 <!-- Modal franchise-->
 
 <div class="modal-franchise modal js-modal" data-modal="franchise">
-
   <svg class="modal-franchise__icon js-modal-close">
     <use href="./images/icons.svg#icon-close-line"></use>
   </svg>
 
-  <p class="modal-franchise__title">
-    Thank you for your interest in owning an Ice Cream shop
-  </p>
+  <p class="modal-franchise__title">Thank you for your interest in owning an Ice Cream shop</p>
 
-  <p class="modal-franchise__text">Due to the overwhelming volume of franchise
-    requests
-    we are not accepting new franchisee applications at this time.
-    Once the application process resumes, we will contact you
-    for further information. Please fill out the contact information
-    below and we will reach out for additional information. We appreciate your
-    patience.
+  <p class="modal-franchise__text">
+    Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+    applications at this time. Once the application process resumes, we will contact you for further
+    information. Please fill out the contact information below and we will reach out for additional
+    information. We appreciate your patience.
   </p>
 
   <form class="franchise-form">
-    <input class="franchise-form__input" type="text" name="name" id="name"
-      placeholder="Name" autocomplete="on" required>
-    <input class="franchise-form__input" type="tel" name="tel" id="tel"
-      placeholder="Phone" autocomplete="on" required>
-    <input class="franchise-form__input" type="email" name="email" id="mail"
-      placeholder="Email" autocomplete="on" required>
-    <textarea class="franchise-form__comment" name="comment" id="comment"
-      placeholder="Comment"></textarea>
+    <input
+      class="franchise-form__input"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Name"
+      autocomplete="on"
+      required
+    />
+    <input
+      class="franchise-form__input"
+      type="tel"
+      name="tel"
+      id="tel"
+      pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+      minlength="13"
+      maxlength="13"
+      title="+380123456789"
+      placeholder="Phone"
+      autocomplete="on"
+      required
+    />
+    <input
+      class="franchise-form__input"
+      type="email"
+      name="email"
+      id="mail"
+      placeholder="Email"
+      autocomplete="on"
+      required
+    />
+    <textarea
+      class="franchise-form__comment"
+      name="comment"
+      id="comment"
+      placeholder="Comment"
+    ></textarea>
     <button type="submit" class="franchise-form__button">Submit</button>
   </form>
-
 </div>

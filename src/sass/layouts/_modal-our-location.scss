@@ -6,7 +6,7 @@
   min-width: 280px;
   max-height: 365px;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 28px;
   color: $primary-text-color;
   transform: translate(-50%, -50%) scale(0.5);
