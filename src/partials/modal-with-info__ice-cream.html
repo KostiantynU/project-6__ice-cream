@@ -1,7 +1,3 @@
-<!-- <button type="button" class="js-open-modal" data-modal="modal">
-  modal with info
-</button> -->
-
 <div class="js-overlay-modal">
   <div class="modal-with-info modal" data-modal="modal-with-info__ice-cream">
     <button type="button" class="js-modal-close">
@@ -50,14 +46,6 @@
           <p class="modal-with-info__additional">Carbs</p>
         </li>
       </ul>
-      <!-- </ul>
-          <ul class="modal-with-info__components">
-          <li class="modal-with-info__value">kcal</li>
-          <li class="modal-with-info__value">Protein..</li>
-          <li class="modal-with-info__value">Fats</li>
-          <li class="modal-with-info__value">Carbs</li>
-        </ul> -->
-
       <p class="modal-with-info__ingridiens">Ingredients</p>
       <div class="modal-with-info__products">
         <ul>
@@ -78,8 +66,18 @@
         </ul>
       </div>
       <form class="modal-with-info__form">
-        <input type="text" name="name" placeholder="Name" class="modal-with-info__input" />
-        <input type="tel" name="phone" placeholder="Phone" class="modal-with-info__input" />
+        <input type="text" name="name" placeholder="Name" class="modal-with-info__input" required />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          class="modal-with-info__input"
+          pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+          minlength="13"
+          maxlength="13"
+          title="+380123456789"
+          required
+        />
         <textarea name="comment" placeholder="Comment" class="modal-with-info__textarea"></textarea>
         <button type="submit" class="modal-with-info__button-submit">Submit</button>
       </form>
