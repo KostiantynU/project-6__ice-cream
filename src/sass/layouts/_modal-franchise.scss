@@ -21,7 +21,9 @@
   left: 50%;
   width: 87.5%;
   min-width: 280px;
-  height: auto;
+  max-height: 674px;
+  height: 100%;
+  overflow-y: scroll;
   padding: 28px;
   color: $primary-text-color;
   transform: translate(-50%, -50%) scale(0.5);
@@ -40,6 +42,7 @@
   }
   @include tablet {
     width: 568px;
+    max-height: 668px;
     padding: 32px 60px;
   }
 

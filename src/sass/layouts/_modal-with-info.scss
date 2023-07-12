@@ -12,7 +12,9 @@
   top: 50%;
   left: 50%;
   width: 280px;
-  height: auto;
+  max-height: 968px;
+  height: 100%;
+  overflow-y: scroll;
   z-index: 30;
   padding: 28px 20px;
   border-radius: 10px;
@@ -22,7 +24,8 @@
 
   @include phone {
     max-width: 280px;
-    height: auto;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   @include mobile {
@@ -33,7 +36,8 @@
 
   @include tablet {
     width: 568px;
-    height: auto;
+    height: 100%;
+    overflow-y: scroll;
     padding: 32px 40px;
   }
   &.active {
